@@ -1,0 +1,25 @@
+{
+  "name": "nisar.dev",
+  "version": "1.0.0",
+  "description": "Personal Portfolio site and Blog of Syed Nisar Hassan Naqvi.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nisarhassan12/nisar.dev.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS",
+    "REACT"
+  ],
+  "author": "Syed Nisar Hassan <syednisarhassan12@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nisarhassan12/nisar.dev/issues"
+  },
+  "homepage": "https://github.com/nisarhassan12/nisar.dev#readme"
+}
