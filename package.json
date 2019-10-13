@@ -4,7 +4,8 @@
   "description": "Personal Portfolio site and Blog of Syed Nisar Hassan Naqvi.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gatsby develop",
+    "build": "gatsby build"
   },
   "repository": {
     "type": "git",
