@@ -15,7 +15,8 @@
     "HTML",
     "CSS",
     "JS",
-    "REACT"
+    "REACT",
+    "Gatsby"
   ],
   "author": "Syed Nisar Hassan <syednisarhassan12@gmail.com>",
   "license": "ISC",
@@ -24,6 +25,8 @@
   },
   "homepage": "https://github.com/nisarhassan12/nisar.dev#readme",
   "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
     "gatsby": "^2.13.67",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
