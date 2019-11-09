@@ -1,6 +1,11 @@
 export const sizes = {
-    small: '1.8rem',
     normal: '2.2rem',
-    medium: '',
-    large: ''
+    girdMaxWidth: '114rem',
+}
+
+export const colors = {
+    white: '#fff',
+    darkGrey: '#14171d',
+    darkGreyLight: '#1d2027',
+    pink: '#fc4848',
 }

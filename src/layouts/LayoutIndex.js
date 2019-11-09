@@ -3,7 +3,7 @@ import React from 'react'
 import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/useSiteMetadata'
-import { sizes } from '../utils/variables'
+import { sizes, colors } from '../utils/variables'
 
 const LayoutIndex = ({ canonical, children }) => {
     const { title, description } = useSiteMetadata()
@@ -28,25 +28,48 @@ const LayoutIndex = ({ canonical, children }) => {
                 }
     
                 body {
-                    font-family: 'Ubuntu', sans-serif;
-                    font-size: 1.6rem;
-                    font: 300 ${sizes.normal} 'Josefin sans', sans-serif; 
+                    font: 300 ${sizes.normal}/1.6 'Josefin sans', sans-serif; 
+                    color: ${colors.white};
+                    background: ${colors.darkGrey};
                     box-sizing: border-box;
+                    overflow-x: hidden;
                 }
+
+                /* --------------------------------------------- */
+                /* ----- Typography ----- */
+                /* --------------------------------------------- */
+
+                h1,
+                h2,
+                h2, 
+                h4 {
+                    line-height: 1.1;
+                    font-weight: 400;
+                }
+
+                /* --------------------------------------------- */
+                /* ----- Layout ----- */
+                /* --------------------------------------------- */
+
+                .row {
+                    margin: 0 auto;
+                    max-width: ${sizes.girdMaxWidth};
+                }
+
             `} />
             <Helmet>
                 <meta lang="en" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
+                <link rel="canonical" href={`https://nisar.dev/${canonical ? canonical : ''}`}/>
                 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
             </Helmet>
-                <>
-                    {children}
-                </>
+            <>
+                {children}
+            </>
         </>
-            )
-        }
-        
+    )
+}
+
 export default LayoutIndex
