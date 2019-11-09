@@ -1,11 +1,11 @@
 import React from 'react'
 
 import LayoutIndex from '../layouts/LayoutIndex'
-import Bannner from '../components/Banner'
+import HeroIndex from '../components/HeroIndex'
 
 const IndexPage = () => (
     <LayoutIndex canonical="/">
-        <Bannner />
+        <HeroIndex />
     </LayoutIndex>
 )
 
