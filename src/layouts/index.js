@@ -1,36 +1,15 @@
 import React from 'react'
 
-import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/useSiteMetadata'
+import RootLayout from '../components/RootLayout'
+import MainLayout from '../components/MainLayout'
 
 const IndexLayout = ({ canonical, children }) => {
     const { title, description } = useSiteMetadata()
 
     return (
-        <>
-            <Global styles={css`
-                /* --------------------------------------------- */
-                /* ----- Basic Setup ----- */
-                /* --------------------------------------------- */
-    
-                *,
-                *::before,
-                *::after {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: inherit;
-                }
-    
-                html {
-                    font-size: 62.5%;
-                }
-    
-                body {
-                    font: 300 2.4rem/1.6 'Josefin sans', sans-serif;
-                    box-sizing: border-box;
-                }
-            `} />
+        <RootLayout>
             <Helmet>
                 <meta lang="en" />
                 <title>{title}</title>
@@ -39,10 +18,15 @@ const IndexLayout = ({ canonical, children }) => {
                 {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
                 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
             </Helmet>
-            <>
-                {children}
-            </>
-        </>
+            {
+                canonical === '/' ? 
+                    children 
+                        : 
+                    <MainLayout>
+                        {children}
+                    </MainLayout>
+            }
+        </RootLayout>
     )
 }
 
