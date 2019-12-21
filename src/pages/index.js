@@ -1,14 +1,14 @@
 import React from 'react'
 
-import LayoutIndex from '../layouts/LayoutIndex'
+import IndexLayout from '../layouts/index'
 
 const IndexPage = () => (
-    <LayoutIndex canonical="/">
+    <IndexLayout canonical="/">
         <p>
             The site is currently under development.
         </p>
         Author: <a href="https://twitter.com/nisarhassan12">Nisar Hassan</a>
-    </LayoutIndex>
+    </IndexLayout>
 )
 
 export default IndexPage

@@ -4,7 +4,7 @@ import { Global, css } from '@emotion/core'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 
-const LayoutIndex = ({ canonical, children }) => {
+const IndexLayout = ({ canonical, children }) => {
     const { title, description } = useSiteMetadata()
 
     return (
@@ -46,4 +46,4 @@ const LayoutIndex = ({ canonical, children }) => {
     )
 }
 
-export default LayoutIndex
+export default IndexLayout
