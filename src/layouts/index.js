@@ -27,8 +27,7 @@ const IndexLayout = ({ canonical, children }) => {
                 }
     
                 body {
-                    font-family: 'Ubuntu', sans-serif;
-                    font-size: 1.6rem;
+                    font: 300 2.4rem/1.6 'Josefin sans', sans-serif;
                     box-sizing: border-box;
                 }
             `} />
@@ -38,6 +37,7 @@ const IndexLayout = ({ canonical, children }) => {
                 <meta name="description" content={description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
+                <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
             </Helmet>
             <>
                 {children}
