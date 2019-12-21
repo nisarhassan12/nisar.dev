@@ -18,12 +18,29 @@ const GlobalStyles = () => <Global
 
         html {
             font-size: 62.5%;
+
+            @media(max-width: ${sizes.breakpoints.lgx}) {
+                font-size: 60%;
+            }
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                font-size: 55%;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                font-size: 52%;
+            }
         }
 
         body {
-            font: 300 2.4rem/1.6 'Josefin sans', sans-serif;
+            font: 300 ${sizes.font.default}/1.6 'Josefin sans', sans-serif;
             color: ${colors.text};
             box-sizing: border-box;
+            overflow-x: hidden;
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                font: 300 ${sizes.font.default}/1.6 'Josefin sans', sans-serif;
+            }
         }
 
         /* --------------------------------------------- */
@@ -33,6 +50,18 @@ const GlobalStyles = () => <Global
         .row {
             margin: 0 auto;
             max-width: ${sizes.grid.maxWidth};
+
+            @media(max-width: ${sizes.breakpoints.lgx}) {
+                padding: 0 7rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                padding: 0 4rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 0 1rem;
+            }
         }
 
         /* --------------------------------------------- */
@@ -47,6 +76,10 @@ const GlobalStyles = () => <Global
 
         h1 {
             font-size: 6.5rem;
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                font-size: 4.5rem;
+            }
         }
 
         /* --------------------------------------------- */
@@ -74,6 +107,16 @@ const GlobalStyles = () => <Global
                 color: ${colors.white};
                 background: ${colors.darkGrey};
                 border-color: ${colors.darkGrey};
+            }
+        }
+
+        /* --------------------------------------------- */
+        /* ----- Others ----- */
+        /* --------------------------------------------- */
+
+        br {
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                display: none;
             }
         }
 
