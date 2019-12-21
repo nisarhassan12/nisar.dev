@@ -4,3 +4,7 @@ tasks:
 ports: 
   - port: 8000
     onOpen: open-preview
+
+vscode:
+  extensions:
+    - jpoissonnier.vscode-styled-components@0.0.27:6f8dLBHJ6bHiAsfAwvXZNg==
