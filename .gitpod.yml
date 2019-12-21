@@ -3,7 +3,7 @@ tasks:
     command: npm run start
 ports: 
   - port: 8000
-    onOpen: open-preview
+    onOpen: open-browser
 
 vscode:
   extensions:
