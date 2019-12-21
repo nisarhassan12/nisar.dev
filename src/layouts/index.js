@@ -14,6 +14,7 @@ const IndexLayout = ({ canonical, children }) => {
                 <meta lang="en" />
                 <title>{title}</title>
                 <meta name="description" content={description} />
+                <meta name="author" content="Nisar Hassan Naqvi" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
                 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
