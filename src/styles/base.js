@@ -30,6 +30,10 @@ const GlobalStyles = () => <Global
             @media(max-width: ${sizes.breakpoints.md}) {
                 font-size: 52%;
             }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                font-size: 50%;
+            }
         }
 
         body {

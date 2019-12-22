@@ -3,6 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 import { Link } from 'gatsby'
+import Nav from './Nav'
 
 const StyledHomePageBanner = styled.header`
     position: relative;
@@ -39,6 +40,7 @@ const StyledHomePageBanner = styled.header`
 
 const HomePageBanner = () => (
     <StyledHomePageBanner role="banner" className="banner row">
+        <Nav />
         <div className="text-box">
             <h1>Hi! I'm Nisar</h1>
             <p>A front end web developer and interface designer <span>&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>

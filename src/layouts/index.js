@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 import RootLayout from '../components/RootLayout'
 import MainLayout from '../components/MainLayout'
+import Nav from '../components/Nav'
 
 const IndexLayout = ({ canonical, children }) => {
     const { title, description } = useSiteMetadata()
@@ -23,9 +24,12 @@ const IndexLayout = ({ canonical, children }) => {
                 canonical === '/' ? 
                     children 
                         : 
-                    <MainLayout>
-                        {children}
-                    </MainLayout>
+                    <>
+                        <Nav />
+                        <MainLayout>
+                            {children}
+                        </MainLayout>
+                    </>
             }
         </RootLayout>
     )
