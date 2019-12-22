@@ -5,6 +5,7 @@ import useSiteMetadata from '../hooks/useSiteMetadata'
 import RootLayout from '../components/RootLayout'
 import MainLayout from '../components/MainLayout'
 import Nav from '../components/Nav'
+import Footer from '../styles/Footer'
 
 const IndexLayout = ({ canonical, children }) => {
     const { title, description } = useSiteMetadata()
@@ -31,6 +32,7 @@ const IndexLayout = ({ canonical, children }) => {
                         </MainLayout>
                     </>
             }
+            <Footer />
         </RootLayout>
     )
 }

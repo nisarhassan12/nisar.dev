@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -15,7 +15,6 @@ const StyledNav = styled.nav`
 
     ul {
         display: flex;
-        list-style: none;
     }
 
     li {

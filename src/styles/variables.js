@@ -1,7 +1,10 @@
 export const colors = {
     white: '#fff',
+    offWhite: '#f4f4f4',
+    textWhite: '#c6d8d7',
     text: '#333',
-    darkGrey: '#293335'
+    darkGrey: '#293335',
+    lightGrey: '#394344'
 }
 
 export const sizes = {
