@@ -43,7 +43,7 @@ const GlobalStyles = () => <Global
             overflow-x: hidden;
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font: 300 ${sizes.font.default}/1.6 'Josefin sans', sans-serif;
+                font: 300 ${sizes.font.sm}/1.6 'Josefin sans', sans-serif;
             }
         }
 
@@ -69,7 +69,7 @@ const GlobalStyles = () => <Global
         }
 
         /* --------------------------------------------- */
-        /* ----- Headlines ----- */
+        /* ----- Headlines & Paragraphs ----- */
         /* --------------------------------------------- */
 
         h1,

@@ -25,7 +25,7 @@ const StyledHomePageBanner = styled.header`
         margin: 2rem 0;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2.1rem;
+            font-size: 2.2rem;
             padding-right: 1rem;
         }
     }

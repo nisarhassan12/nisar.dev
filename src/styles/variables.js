@@ -10,7 +10,7 @@ export const colors = {
 export const sizes = {
     font: {
         default: '2.4rem',
-        sm: '2rem'
+        sm: '2.2rem'
     },
     breakpoints: {
         lgx: '1240px',
