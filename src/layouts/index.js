@@ -26,7 +26,6 @@ const IndexLayout = ({ canonical, children }) => {
                     children 
                         : 
                     <>
-                        <Nav />
                         <MainLayout>
                             {children}
                         </MainLayout>
