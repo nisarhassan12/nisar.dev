@@ -2,10 +2,9 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
-import { Link } from 'gatsby'
 import Nav from './Nav'
 
-const StyledHomePageBanner = styled.header`
+const StyledBanner = styled.header`
     position: relative;
     height: 100vh;
 
@@ -38,15 +37,19 @@ const StyledHomePageBanner = styled.header`
 
 `
 
-const HomePageBanner = () => (
-    <StyledHomePageBanner role="banner" className="banner row">
+const Banner = ({
+    title,
+    para,
+    btn
+}) => (
+    <StyledBanner role="banner" className="banner row">
         <Nav />
         <div className="text-box">
-            <h1>Hi! I'm Nisar</h1>
-            <p>A front end web developer and interface designer <span>&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>
-            <Link to="/contact" className="btn btn--small btn--dark">Need help? Get in touch...</Link>
+            <h1>{title}</h1>
+            { para ? para : null }
+            { btn ? btn : btn }
         </div>
-    </StyledHomePageBanner>
+    </StyledBanner>
 )
 
-export default HomePageBanner
+export default Banner
