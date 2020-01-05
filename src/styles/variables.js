@@ -21,5 +21,15 @@ export const sizes = {
     },
     grid: {
         maxWidth: '114rem',
+        postContainerWidth: '80rem',
     }
+}
+
+export const borders = {
+    light: '1px solid #eee',
+}
+
+export const shadows = {
+    light: '0 1rem 2rem rgba(0,0,0, .07)',
+    light1: '0 2rem 4rem rgba(0,0,0, .1)', 
 }

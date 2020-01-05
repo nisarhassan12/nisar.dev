@@ -1,17 +1,32 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors } from '../styles/variables'
+import { colors, sizes } from '../styles/variables'
+import Post from './Post'
 
 const StyledPosts = styled.section`
-    border: 1px solid ${colors.offWhite1};
     background: ${colors.offWhite};
+
+   .posts {
+       max-width: 92rem;
+   }
+
+   a {
+       color: ${colors.text};
+   }
 `
 
-const Posts = () => (
+const Posts = ({posts}) => (
     <StyledPosts id="posts">
         <div className="row">
-            Posts will go here.
+           <div className="posts">
+                <h2>Articles</h2>
+                <div>
+                        {
+                            posts.map(post => <Post {...post}/>)
+                        }
+                </div>
+           </div>
         </div>
     </StyledPosts>
 )

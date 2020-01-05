@@ -9,7 +9,7 @@ const IndexPage = () => (
         <Banner 
             title="Hi! I'm Nisar"
             para={<p>A front end web developer and interface designer <span>&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>}
-            btn={<Link to="/contact" className="btn btn--small btn--dark">Need help? Get in touch...</Link>}
+            btn={<Link to="/contact" className="btn btn--dark">Need help? Get in touch...</Link>}
         />
     </IndexLayout>
 )

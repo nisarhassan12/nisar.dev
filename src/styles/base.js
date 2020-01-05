@@ -78,7 +78,8 @@ const GlobalStyles = () => <Global
 
         h1,
         h2,
-        h3 {
+        h3,
+        h4 {
             line-height: 1.1;
         }
 
@@ -87,6 +88,19 @@ const GlobalStyles = () => <Global
 
             @media(max-width: ${sizes.breakpoints.sm}) {
                 font-size: 4.5rem;
+            }
+        }
+
+        h2 {
+            font-size: 5rem;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 12rem;
+                height: .3rem;
+                margin: 1rem 0 5rem;
+                background: ${colors.darkGrey};
             }
         }
 
@@ -100,21 +114,14 @@ const GlobalStyles = () => <Global
 
         .btn {
             display: inline-block;
-            padding: 1.5rem 2.5rem;
-            color: ${colors.text};
             border: 1px solid;
+            padding: .6rem 2.5rem;
             border-radius: 10rem;
-
-            &--small {
-                padding: .8rem 2rem;
-                font-size: 2rem;
-                font-weight: 400;
-            }
 
             &--dark {
                 color: ${colors.white};
                 background: ${colors.darkGrey};
-                border-color: ${colors.darkGrey};
+                border: 1px solid ${colors.darkGrey};            
             }
         }
 

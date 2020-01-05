@@ -21,7 +21,7 @@ const StyledBanner = styled.header`
 
     p {
         font-size: 2.6rem;
-        margin: 2rem 0;
+        margin: 2rem 0 2.5rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             font-size: 2.2rem;
