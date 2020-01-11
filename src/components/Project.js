@@ -62,10 +62,14 @@ const StyledProject = styled.div`
 
 `
 
-const Project = ({ title, description, path, url }) => (
+const Project = ({ title, description, path, video, url }) => (
     <StyledProject>
         <a className="preview" href={url} target="_blank">
-            <img alt={title} src={path}/>
+            { !video ? 
+                <img alt={title} src={path}/> :
+                <video autoPlay loop muted playsInline>
+                    <source src={video} type="video/mp4"/>
+                </video> }
         </a>
         <div className="content">
             <div className="text">
