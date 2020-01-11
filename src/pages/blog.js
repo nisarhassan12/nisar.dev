@@ -6,9 +6,13 @@ import Posts from '../components/Posts'
 import { Link } from 'gatsby'
 import usePosts from '../hooks/usePosts'
 import styled from '@emotion/styled'
+import { colors } from '../styles/variables'
 
 const StyledBlogPage = styled.div`
 
+    section {
+        padding-top: 5rem;
+    }
 
 `
 
@@ -16,13 +20,8 @@ const BlogPage = () => {
     const posts = usePosts()
     console.log(posts)
     return (
-        <IndexLayout canonical="/blog/" pageTitle="Blog">
+        <IndexLayout canonical="/blog/" pageTitle="Blog" pageColor={colors.offWhite}>
             <StyledBlogPage>
-                <Banner 
-                    title="Blog"
-                    para={<p>This is my little corner of the web where <br /> I wirte things, mostly about the web.</p>}
-                    btn={<a href="#posts" className="btn btn--dark">Let's get reading &nbsp;&rarr;</a>}
-                />
                 <Posts posts={posts}/>
             </StyledBlogPage>
         </IndexLayout>

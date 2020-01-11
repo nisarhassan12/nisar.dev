@@ -93,13 +93,15 @@ const GlobalStyles = () => <Global
 
         h2 {
             font-size: 5rem;
+        }
 
+        .heading-underlined {
             &::after {
                 content: "";
                 display: block;
                 width: 12rem;
                 height: .3rem;
-                margin: 1rem 0 5rem;
+                margin: 2rem 0 5rem;
                 background: ${colors.darkGrey};
             }
         }
@@ -122,6 +124,14 @@ const GlobalStyles = () => <Global
                 color: ${colors.white};
                 background: ${colors.darkGrey};
                 border: 1px solid ${colors.darkGrey};            
+            }
+
+            &--small {
+                font-size: 1.9rem;
+                padding: .3rem 2rem;
+                background: ${colors.darkGrey};
+                color: ${colors.white};
+                border-color: ${colors.darkGrey};
             }
         }
 

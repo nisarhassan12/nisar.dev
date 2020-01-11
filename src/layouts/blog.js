@@ -12,6 +12,7 @@ const StyledBlogLayout = styled.div`
         max-width: ${sizes.grid.postContainerWidth};
         background: ${colors.white};
         box-shadow: ${shadows.light};
+        border: ${borders.light1};
         padding: 5rem 3rem;
     }
 
@@ -41,7 +42,6 @@ const StyledBlogLayout = styled.div`
 
 const BlogLayout  = ({ canonical, children, pageTitle }) => (
     <IndexLayout canonical={canonical} pageTitle={pageTitle} pageColor={colors.offWhite}>
-        <Nav />
         <StyledBlogLayout>
             <div className="row">
                 {children}

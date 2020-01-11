@@ -27,9 +27,11 @@ export const sizes = {
 
 export const borders = {
     light: '1px solid #eee',
+    light1: '1px solid #ddd'
 }
 
 export const shadows = {
     light: '0 1rem 2rem rgba(0,0,0, .07)',
     light1: '0 2rem 4rem rgba(0,0,0, .1)', 
+    light2: '0 1rem 5rem rgba(0,0,0,0.25);'
 }

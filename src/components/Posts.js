@@ -20,11 +20,11 @@ const Posts = ({posts}) => (
     <StyledPosts id="posts">
         <div className="row">
            <div className="posts">
-                <h2>Articles</h2>
+                <h2 className="heading-underlined">Articles</h2>
                 <div>
-                        {
-                            posts.map(post => <Post {...post}/>)
-                        }
+                    {
+                        posts.map(post => <Post {...post}/>)
+                    }
                 </div>
            </div>
         </div>
