@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows } from '../styles/variables'
+import { colors, shadows, borders } from '../styles/variables'
 import { Link } from 'gatsby'
 
 const StyledPost = styled.article`
@@ -20,10 +20,12 @@ const StyledPost = styled.article`
     .text {
         padding: 4rem 2.5rem;
         font-size: 2rem;
-
+        border: ${borders.light1};
     }
 
     h3 {
+        font-size: 2.7rem;
+        font-weight: 300;
         margin-bottom: 2rem;
     }
 
@@ -54,7 +56,7 @@ const Post = ({title, date, image, excerpt, slug}) => (
                 <h3>{title}</h3>
                 <p>{date}</p>
                 <p>{excerpt}</p>
-                <Link to={`/blog/${slug}`} className="btn btn--dark">Read More &nbsp;&rarr;</Link>
+                <Link to={`/blog/${slug}`} className="btn btn--small">Read More &nbsp;&rarr;</Link>
             </div>
         </StyledPost>
     </Link>
