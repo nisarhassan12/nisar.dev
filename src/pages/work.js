@@ -8,6 +8,7 @@ import GitpodPreview from '../resources/gitpod-io.png'
 import TheiaPreview from '../resources/theia-ide.png'
 import ContributeDevPreview from '../resources/contribute-dev.png'
 import TypeFoxPreview from '../resources/typefox-io.png'
+import TotaliserPreview from '../resources/totaliser.png'
 import Project from '../components/Project'
 
 const StyledWorkPage  = styled.div`
@@ -46,6 +47,11 @@ const projects = [
         description: 'Website for TypeFox a company that build dev tools & programming languages for engineers.',
         title: 'typefox.io',
         url: 'https://typefox.io'
+    },{
+        path: TotaliserPreview,
+        description: 'A simple calculator app built with React.',
+        title: 'Totaliser',
+        url: 'https://totaliser.surge.sh'
     }
 ]
 

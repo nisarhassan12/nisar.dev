@@ -15,6 +15,7 @@ const StyledProject = styled.div`
         display: flex;
         flex-basis: 70%;
         max-width: 70rem;
+        min-height: 39rem;
         box-shadow: ${shadows.light2};
         transition: all .25s;
 
