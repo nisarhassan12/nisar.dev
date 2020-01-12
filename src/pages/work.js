@@ -3,7 +3,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 import IndexLayout from '../layouts/index'
 import { colors } from '../styles/variables'
-import Portfolio from '../resources/portfolio.mp4'
 import GitpodPreview from '../resources/gitpod-io.png'
 import TheiaPreview from '../resources/theia-ide.png'
 import ContributeDevPreview from '../resources/contribute-dev.png'
@@ -19,7 +18,7 @@ const StyledWorkPage  = styled.div`
 
 const projects = [
     {
-        video: Portfolio,
+        video: '/portfolio.mp4',
         description: 'A free open source portfolio template for web developers for anyone to use as their own or customize the way they like.',
         title: 'Portfolio template',
         url: 'https://nisar.surge.sh'

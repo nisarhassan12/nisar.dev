@@ -34,8 +34,14 @@ const StyledBlogLayout = styled.div`
         border-left: ${borders.light};
     }
 
-    img {
+    img, video {
         max-width: 100%;
+    }
+
+    video {
+        display: block;
+        margin: 3rem 0;
+        box-shadow: ${shadows.light2};
     }
 `
 

@@ -15,7 +15,9 @@ A beautiful lightweight, customizable, accessible and performant single-page per
     </div>
 </blockquote>
 
-![image](https://user-images.githubusercontent.com/46004116/70847770-1e3f3380-1e8a-11ea-8f68-05fa649f6237.png)
+<video autoPlay loop muted playsInline>
+    <source src='/portfolio.mp4' type="video/mp4"/>
+</video> 
 
 The template is built using HTML, SCSS, vanilla JavaScript, and it doesn't use any CSS or JavaScript libraries or have any framework dependencies. Everyone is welcome to contribute or use it as a template for their portfolio. 
 
