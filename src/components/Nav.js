@@ -7,7 +7,6 @@ import { sizes } from '../styles/variables'
 const StyledNav = styled.nav`
     display: flex;
     justify-content: flex-end;
-    padding: 5rem 0;
 
     @media(max-width: ${sizes.breakpoints.md}) {
         justify-content: center;
@@ -15,6 +14,16 @@ const StyledNav = styled.nav`
 
     ul {
         display: flex;
+        padding: 5rem 0;
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            padding: 3.5rem 0;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 3rem 0;
+        }
+
     }
 
     li {
