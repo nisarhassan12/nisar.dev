@@ -9,11 +9,9 @@ import styled from '@emotion/styled'
 import { colors } from '../styles/variables'
 
 const StyledBlogPage = styled.div`
-
     section {
         padding-top: 5rem;
     }
-
 `
 
 const BlogPage = () => {

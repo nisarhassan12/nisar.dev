@@ -16,9 +16,13 @@ const StyledBlogLayout = styled.div`
         padding: 5rem 3rem;
     }
 
+    .date {
+        margin-bottom: 3rem;
+    }
+
     h1 {
         font-size: 5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     p + p {

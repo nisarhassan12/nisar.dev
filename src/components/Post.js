@@ -54,7 +54,7 @@ const Post = ({title, date, image, excerpt, slug}) => (
             >&nbsp;</div>
             <div className="text">
                 <h3>{title}</h3>
-                <p>{date}</p>
+                <p>{(new Date(date)).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
                 <p>{excerpt}</p>
                 <Link to={`/blog/${slug}`} className="btn btn--small">Read More &nbsp;&rarr;</Link>
             </div>
