@@ -3,6 +3,7 @@ import React from 'react'
 import IndexLayout from './index'
 import Nav from '../components/Nav'
 import styled from '@emotion/styled'
+import { Link } from 'gatsby'
 import { sizes, colors, borders, shadows } from '../styles/variables'
 
 const StyledBlogLayout = styled.div`
@@ -10,6 +11,9 @@ const StyledBlogLayout = styled.div`
 
     .row {
         max-width: ${sizes.grid.postContainerWidth};
+    }
+
+    .container {
         background: ${colors.white};
         box-shadow: ${shadows.light};
         border: ${borders.light1};
@@ -47,14 +51,21 @@ const StyledBlogLayout = styled.div`
         margin: 3rem 0;
         box-shadow: ${shadows.light2};
     }
+
+    .back {
+        padding: 5rem 0;
+    }
 `
 
 
 const BlogLayout  = ({ canonical, children, pageTitle }) => (
     <IndexLayout canonical={canonical} pageTitle={pageTitle} pageColor={colors.offWhite}>
         <StyledBlogLayout>
-            <div className="row">
+            <div className="container row">
                 {children}
+            </div>
+            <div class="back row">
+                <Link to="/blog">Go Back &nbsp;&rarr;</Link>
             </div>
         </StyledBlogLayout>
     </IndexLayout>
