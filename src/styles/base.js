@@ -100,7 +100,7 @@ const GlobalStyles = () => <Global
                 content: "";
                 display: block;
                 width: 12rem;
-                height: .3rem;
+                height: 2px;
                 margin: 2rem 0 5rem;
                 background: ${colors.darkGrey};
             }
