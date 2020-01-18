@@ -43,11 +43,11 @@ const GlobalStyles = () => <Global
             overflow-x: hidden;
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                line-height: 1.5;
+                line-height: 1.6;
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font: 300 ${sizes.font.sm}/1.5 'Josefin sans', sans-serif;
+                font: 300 ${sizes.font.sm}/1.6 'Josefin sans', sans-serif;
             }
         }
 
