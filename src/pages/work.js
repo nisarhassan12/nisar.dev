@@ -14,6 +14,10 @@ const StyledWorkPage  = styled.div`
     section {
         padding-top: 5rem; 
     }
+
+    h1 {
+        margin-bottom: 4rem;
+    }
 `
 
 const projects = [

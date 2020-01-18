@@ -11,6 +11,10 @@ const StyledPosts = styled.section`
        max-width: 92rem;
     }
 
+    h1 {
+        margin-bottom: 4rem;
+    }
+
     a {
         color: ${colors.text};
     }

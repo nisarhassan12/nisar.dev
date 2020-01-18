@@ -121,13 +121,13 @@ const GlobalStyles = () => <Global
                 &::after {
                     content: "";
                     display: block;
-                    width: 12rem;
+                    margin: 3rem 0;
                     height: 2px;
-                    margin: 2.5rem 0 4rem;
+                    width: 12rem;
                     background: ${colors.darkGrey};
 
                     @media(max-width: ${sizes.breakpoints.md}) {
-                        margin: 2rem 0 3.5rem;
+                        margin: 2rem 0;
                     }
                 }
             }
