@@ -1,6 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
-import { colors, sizes } from './variables'
+import { colors, sizes, borders } from './variables'
 
 const GlobalStyles = () => <Global 
     styles={css`
@@ -72,6 +72,11 @@ const GlobalStyles = () => <Global
             }
         }
 
+        .grey-container {
+            background: ${colors.offWhite};
+            border: ${borders.light};
+        }
+
         /* --------------------------------------------- */
         /* ----- Headlines & Paragraphs ----- */
         /* --------------------------------------------- */
@@ -84,25 +89,23 @@ const GlobalStyles = () => <Global
         }
 
         h1 {
-            font-size: 6.5rem;
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 4.5rem;
-            }
-        }
-
-        h2 {
             font-size: 5rem;
         }
 
-        .heading-underlined {
-            &::after {
-                content: "";
-                display: block;
-                width: 12rem;
-                height: 2px;
-                margin: 2rem 0 5rem;
-                background: ${colors.darkGrey};
+        h2 {
+            
+        }
+
+        .heading {
+            &--underlined {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 12rem;
+                    height: 2px;
+                    margin: 2rem 0 5rem;
+                    background: ${colors.darkGrey};
+                }
             }
         }
 

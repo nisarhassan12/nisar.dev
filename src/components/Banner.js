@@ -19,6 +19,14 @@ const StyledBanner = styled.header`
         }
     }
 
+    h1 {
+        font-size: 6.5rem;
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            font-size: 4.5rem;
+        }
+    }
+
     p {
         font-size: 2.6rem;
         margin: 2rem 0 2.5rem;

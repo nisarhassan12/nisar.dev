@@ -25,7 +25,6 @@ const StyledBlogLayout = styled.div`
     }
 
     h1 {
-        font-size: 5rem;
         margin-bottom: 3rem;
     }
 

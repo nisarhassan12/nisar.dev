@@ -59,7 +59,7 @@ const WorkPage = () => (
         <StyledWorkPage>
             <section>
                 <div className="row">
-                    <h2 className="heading-underlined">Projects</h2>
+                    <h1 className="heading--underlined">Projects</h1>
                     <div>
                         {
                             projects.map((p, i) => <Project key={i} {...p}/>)
