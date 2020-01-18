@@ -23,7 +23,7 @@ const StyledBanner = styled.header`
         font-size: 6.5rem;
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            font-size: 4.5rem;
+                font-size: 4.5rem;
         }
     }
 

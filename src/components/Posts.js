@@ -7,13 +7,13 @@ import Post from './Post'
 const StyledPosts = styled.section`
     background: ${colors.offWhite};
 
-   .posts {
+    .posts {
        max-width: 92rem;
-   }
+    }
 
-   a {
-       color: ${colors.text};
-   }
+    a {
+        color: ${colors.text};
+    }
 `
 
 const Posts = ({posts}) => (

@@ -37,13 +37,17 @@ const GlobalStyles = () => <Global
         }
 
         body {
-            font: 300 ${sizes.font.default}/1.6 'Josefin sans', sans-serif;
+            font: 300 ${sizes.font.default}/1.7 'Josefin sans', sans-serif;
             color: ${colors.text};
             box-sizing: border-box;
             overflow-x: hidden;
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                line-height: 1.5;
+            }
+
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font: 300 ${sizes.font.sm}/1.6 'Josefin sans', sans-serif;
+                font: 300 ${sizes.font.sm}/1.5 'Josefin sans', sans-serif;
             }
         }
 
@@ -72,6 +76,10 @@ const GlobalStyles = () => <Global
             }
         }
 
+        .wrapper {
+            max-width: ${sizes.grid.wrapperWidth};
+        }
+
         .grey-container {
             background: ${colors.offWhite};
             border: ${borders.light};
@@ -90,10 +98,22 @@ const GlobalStyles = () => <Global
 
         h1 {
             font-size: 5rem;
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                font-size: 4.5rem;
+            }
         }
 
         h2 {
-            
+            font-size: 4.5rem;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                font-size: 4rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                font-size: 3.5rem;
+            }
         }
 
         .heading {
@@ -103,8 +123,12 @@ const GlobalStyles = () => <Global
                     display: block;
                     width: 12rem;
                     height: 2px;
-                    margin: 2rem 0 5rem;
+                    margin: 2.5rem 0 4rem;
                     background: ${colors.darkGrey};
+
+                    @media(max-width: ${sizes.breakpoints.md}) {
+                        margin: 2rem 0 3.5rem;
+                    }
                 }
             }
         }

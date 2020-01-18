@@ -10,7 +10,7 @@ const StyledBlogLayout = styled.div`
     margin: 7rem 0;
 
     .row {
-        max-width: ${sizes.grid.postContainerWidth};
+        max-width: ${sizes.grid.wrapperWidth};
     }
 
     .container {
