@@ -121,7 +121,7 @@ const GlobalStyles = () => <Global
                 &::after {
                     content: "";
                     display: block;
-                    margin: 3rem 0;
+                    margin: 2.5rem 0;
                     height: 2px;
                     width: 12rem;
                     background: ${colors.darkGrey};
