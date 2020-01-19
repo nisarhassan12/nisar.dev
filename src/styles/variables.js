@@ -21,7 +21,7 @@ export const sizes = {
     },
     grid: {
         maxWidth: '114rem',
-        wrapperWidth: '80rem',
+        wrapperWidth: '80.6rem',
     }
 }
 

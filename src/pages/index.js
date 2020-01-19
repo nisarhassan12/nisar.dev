@@ -16,7 +16,7 @@ const IndexPage = () => (
     <IndexLayout canonical="/">
         <Banner 
             title="Hi! I'm Nisar"
-            para={<p>A front end web developer and interface designer <span>&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>}
+            para={<p>A front end web developer and interface designer <span aria-hidden="true">&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>}
             btn={<Link to="/contact" className="btn btn--dark">Need help? Get in touch...</Link>}
         />
 
@@ -26,7 +26,9 @@ const IndexPage = () => (
             <div className="row">
                 <div className="wrapper">
                     <h2 className="heading--underlined">About Me</h2>
-                    <p>I am a self-taught Frontend Web Developer from Lahore, Pakistan. About three years ago is when I started my learning journey on how to make the web stunning and responsive. I have always been a curious individual, which is why I’d love to collaborate and do some real-world projects in order to flourish my skills.I'm not perfect, however. I'm very far from perfection, yet I'm resilient, assertive and stubborn and I find learning a fascinating process. I am currently learning about PWAs and my future plan is to learn about ML for Web Performance.</p>
+                    <p>
+                        I am a self-taught front end developer and interface designer from Pakistan 🇵🇰. I was always curious about computers when I was a child I got introduced to programming in school. I dropped out from universty at the age of 18 with the grand plans of becoming a great computer scientist. I started my career as a front end web developer in 2019. I currently work for <a href="https://typefox.io" target="_blank">TypeFox</a> as a freelancer where entirety of the work i do is open source.
+                    </p>
                 </div>
             </div>
         </section>
