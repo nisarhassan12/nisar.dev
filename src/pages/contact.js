@@ -24,7 +24,7 @@ const StyledContactPage = styled.div`
 `
 
 const ContactPage = () => (
-    <IndexLayout canonical='/contact'>
+    <IndexLayout canonical='/contact' pageTitle="Contact">
         <StyledContactPage>
             <div className="row">
                 <section className="wrapper">
