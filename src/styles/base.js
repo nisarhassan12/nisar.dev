@@ -174,12 +174,32 @@ const GlobalStyles = () => <Global
         /* ----- Others ----- */
         /* --------------------------------------------- */
 
+        input, 
+        textarea,
+        button {
+            font-family: inherit;
+            font-weight: 300;
+            font-size: inherit;
+        }
+
         br {
             @media(max-width: ${sizes.breakpoints.sm}) {
                 display: none;
             }
         }
 
+        /* --------------------------------------------- */
+        /* ----- Utils ----- */
+        /* --------------------------------------------- */
+        
+        .visually-hidden {
+            position: absolute;
+            left: -100000rem;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
     `}
 />
 

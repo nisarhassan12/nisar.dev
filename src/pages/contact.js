@@ -3,6 +3,7 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import { colors } from '../styles/variables'
 import styled from '@emotion/styled'
+import Form from '../components/contact/Form'
 
 const StyledContactPage = styled.div`
 
@@ -23,16 +24,15 @@ const StyledContactPage = styled.div`
 `
 
 const ContactPage = () => (
-    <IndexLayout canonical='/contact' pageColor={colors.offWhite}>
+    <IndexLayout canonical='/contact'>
         <StyledContactPage>
             <div className="row">
                 <section className="wrapper">
                     <h1 className="heading--underlined">Contact</h1>
                     <p>
-                        Are you looking for a fast-performing and user-friendly website to represent your product or business? or looking for any kind of consultation? or want to ask questions? or have some advice for me or just want to say "Hi <span aria-hidden="true">👋</span>" in any case feel free to Let me know. I will do my best to respond back. <span aria-hidden="true">😊</span>
+                        Got something to say? Let me know i will do my best to respond back. 😊
                     </p>
-                    <p>The quickest way to reach out to me is via email.</p>
-                    <a href="mailto:syednisarhassan12@gmail.com" className="btn btn--dark">syednisarhassan@gmail.com</a>
+                    <Form />
                 </section>
             </div>
         </StyledContactPage>
