@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 import TrustedBy from '../components/home/TrustedBy'
+import Skillset from '../components/home/Skillset'
 
 const StyledIndexPage = styled.div`
     .about {
@@ -33,6 +34,11 @@ const IndexPage = () => (
                 </div>
             </div>
         </section>
+
+       {/* ----- My Skillset ----- */}
+
+       <Skillset />
+        
 
        {/* ----- Trusted By ----- */}
 
