@@ -32,7 +32,9 @@ const IndexLayout = ({ canonical, children, pageTitle, pageColor }) => {
                     children 
                         : 
                     <>
-                        <Nav />
+                        <div className="row">
+                            <Nav />
+                        </div>
                         <MainLayout>
                             {children}
                         </MainLayout>

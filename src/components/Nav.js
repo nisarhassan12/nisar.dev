@@ -42,7 +42,7 @@ const StyledNav = styled.nav`
 `
 
 const Nav = () => (
-    <StyledNav role="navigation" className="row">
+    <StyledNav role="navigation">
         <ul>
             <li><Link to="/">Home.</Link></li>
             <li><Link to="/blog">Blog.</Link></li>
