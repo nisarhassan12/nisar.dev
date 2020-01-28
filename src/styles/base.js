@@ -37,11 +37,11 @@ const GlobalStyles = () => <Global
         }
 
         body {
-            font: 300 ${sizes.font.default}/1.7 'Josefin sans', sans-serif;
+            font: 300 ${sizes.font.default}/1.6 'Josefin sans', sans-serif;
             color: ${colors.text};
             box-sizing: border-box;
             overflow-x: hidden;
-
+    
             @media(max-width: ${sizes.breakpoints.md}) {
                 line-height: 1.6;
             }
