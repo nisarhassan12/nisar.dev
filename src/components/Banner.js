@@ -14,9 +14,6 @@ const StyledBanner = styled.header`
         width: 100%;
         transform: translateY(-50%);
 
-        @media(max-width: ${sizes.breakpoints.md}) {
-            text-align: center;
-        }
     }
 
     h1 {
