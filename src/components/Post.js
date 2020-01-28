@@ -24,18 +24,17 @@ const StyledPost = styled.article`
 
     .text {
         padding: 4rem 2.5rem;
-        font-size: 2rem;
+        font-size: 2.1rem;
         border: ${borders.light1};
     }
 
     h3 {
-        font-size: 2.7rem;
         font-weight: 300;
         margin-bottom: 2rem;
     }
 
     p {
-        line-height: 1.3;
+        line-height: 1.4;
         margin: 2rem 0;
     }
 

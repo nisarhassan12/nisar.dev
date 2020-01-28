@@ -43,11 +43,11 @@ const GlobalStyles = () => <Global
             overflow-x: hidden;
     
             @media(max-width: ${sizes.breakpoints.md}) {
-                line-height: 1.6;
+                font-size: ${sizes.font.md};
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font: 300 ${sizes.font.sm}/1.6 'Josefin sans', sans-serif;
+                font-size: ${sizes.font.sm};
             }
         }
 
@@ -99,21 +99,46 @@ const GlobalStyles = () => <Global
         h1 {
             font-size: 5rem;
 
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                font-size: 4.6rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                font-size: 3.7rem;
+            }
+
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 4.5rem;
+                font-size: 3.2rem;
             }
         }
 
         h2 {
             font-size: 4.5rem;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-                font-size: 4rem;
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                font-size: 3.8rem;
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
                 font-size: 3.5rem;
             }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                font-size: 3rem;
+            }
+        }
+
+        h3 {
+            font-size: 2.9rem;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                font-size: 2.7rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                font-size: 2.6rem;
+            }
+
         }
 
         .heading {
@@ -127,7 +152,9 @@ const GlobalStyles = () => <Global
                     background: ${colors.darkGrey};
 
                     @media(max-width: ${sizes.breakpoints.md}) {
-                        margin: 2rem 0;
+                        width: 8rem;
+                        margin: 1.7rem 0;
+                        height: 1px;
                     }
                 }
             }

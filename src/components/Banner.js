@@ -19,8 +19,12 @@ const StyledBanner = styled.header`
     h1 {
         font-size: 6.5rem;
 
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            font-size: 4.6rem;
+        }
+
         @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 4.5rem;
+            font-size: 4rem;
         }
     }
 
@@ -29,8 +33,12 @@ const StyledBanner = styled.header`
         margin: 2rem 0 2.5rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             padding-right: 1rem;
+        }
+
+        @media(max-width: 430px) {
+            font-size: 2.1rem;
         }
     }
 

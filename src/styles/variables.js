@@ -11,7 +11,8 @@ export const colors = {
 export const sizes = {
     font: {
         default: '2.4rem',
-        sm: '2.2rem'
+        md: '2.2rem',
+        sm: '2.1rem'
     },
     breakpoints: {
         lgx: '1240px',
