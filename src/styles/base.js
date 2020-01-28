@@ -72,7 +72,7 @@ const GlobalStyles = () => <Global
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 0 1.5rem;
+                padding: 0 2rem;
             }
         }
 
