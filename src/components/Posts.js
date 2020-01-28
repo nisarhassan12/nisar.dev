@@ -11,6 +11,16 @@ const StyledPosts = styled.section`
        max-width: 92rem;
     }
 
+    .post-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > * {
+            margin-bottom: 6rem;
+        }
+    }
+
     h1 {
         margin-bottom: 4rem;
     }
@@ -25,7 +35,7 @@ const Posts = ({posts}) => (
         <div className="row">
            <div className="posts">
                 <h1 className="heading--underlined">Articles</h1>
-                <div>
+                <div className="post-container">
                     {
                         posts.map(post => <Post {...post}/>)
                     }

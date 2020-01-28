@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, borders } from '../styles/variables'
+import { colors, shadows, borders, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
 
 const StyledPost = styled.article`
@@ -9,12 +9,17 @@ const StyledPost = styled.article`
     background: ${colors.white};
     box-shadow: ${shadows.light};
 
-    &:last-of-type {
-        margin-bottom: 6rem;
+    @media(max-width: ${sizes.breakpoints.lgm}) {
+        flex-direction: column;
+        max-width: 40rem;
     }
 
     .img {
         flex: 0 0 35%;
+
+        @media(max-width: ${sizes.breakpoints.lgm}) {
+            min-height: 30rem;
+        }
     }
 
     .text {
