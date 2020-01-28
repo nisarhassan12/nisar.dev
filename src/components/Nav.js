@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
     display: flex;
     justify-content: flex-end;
 
-    @media(max-width: ${sizes.breakpoints.md}) {
+    @media(max-width: 540px) {
         justify-content: center;
     }
 
