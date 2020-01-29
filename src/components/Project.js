@@ -1,25 +1,38 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { shadows } from '../styles/variables'
+import { shadows, sizes } from '../styles/variables'
 
 const StyledProject = styled.div`
     display: flex;
     justify-content: space-between;
 
+
+    @media(max-width: 1280px) {
+        flex-direction: column;
+        max-width: ${sizes.grid.smallWrapperWidth};
+    }
+
     &:not(:last-of-type) {
-        margin-bottom: 12rem;
+        margin-bottom: 14rem;
     }
 
     .preview {
         display: flex;
-        flex-basis: 70%;
-        max-width: 70rem;
-        min-height: 39rem;
+
         box-shadow: ${shadows.light2};
         transition: all .25s;
 
-        img {
+        @media(max-width: 1280px) {
+            margin-bottom: 5rem;
+        }
+
+        @media(min-width: 1280px) {
+            flex-basis: 70%;
+            max-width: 70rem;
+        }
+
+        img, video {
             width: 100%;
             height: 100%;
         }
@@ -30,34 +43,28 @@ const StyledProject = styled.div`
     }
 
     .content {
-        flex: 1;
-        display: flex;
-        align-items: center;
+        @media(min-width: 1280px) {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            padding-left: 5rem;
+        }
     }
 
     .text {
-
         & > * {
             margin-bottom: 2rem;
         }
     }
 
     h3 {
-        font-size: 4rem;
+        font-size: 3.8rem;
         font-weight: 300;
     }
 
     p {
-        font-size: 2rem;
-    }
-
-    &:nth-of-type(2n) {
-        flex-direction: row-reverse;
-    }
-
-    &:not(:nth-of-type(2n)) {
-        .content {
-            padding-left: 5rem;
+        @media(min-width: ${sizes.breakpoints.lgx}) {
+            font-size: 95%;
         }
     }
 

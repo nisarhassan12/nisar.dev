@@ -47,7 +47,7 @@ const projects = [
     },
     {
         path: TypeFoxPreview,
-        description: 'Website for TypeFox a company that build dev tools & programming languages for engineers.',
+        description: 'Website for TypeFox a company that builds dev tools & programming languages for engineers.',
         title: 'typefox.io',
         url: 'https://typefox.io'
     },{
