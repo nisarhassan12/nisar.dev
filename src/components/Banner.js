@@ -11,7 +11,6 @@ const StyledBanner = styled.header`
     .text-box {
         position: absolute;
         top: 50%;
-        width: 100%;
         transform: translateY(-50%);
 
     }
@@ -33,12 +32,12 @@ const StyledBanner = styled.header`
         margin: 2rem 0 2.5rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2.3rem;
+            font-size: 2.4rem;
             padding-right: 1rem;
         }
 
         @media(max-width: 430px) {
-            font-size: 2.1rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -48,6 +47,11 @@ const StyledBanner = styled.header`
         }
     }
 
+    br {
+        @media(max-width: 450px) {
+            display: none;
+        }
+    }
 `
 
 const Banner = ({
