@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
     display: flex;
     justify-content: flex-end;
 
-    @media(max-width: 540px) {
+    @media(max-width: 450px) {
         justify-content: center;
     }
 
@@ -20,7 +20,7 @@ const StyledNav = styled.nav`
             padding: 3.5rem 0;
         }
 
-        @media(max-width: ${sizes.breakpoints.md}) {
+        @media(max-width: 450px) {
             justify-content: space-between;
             padding: 3rem 0;
             width: 100%;
@@ -36,7 +36,7 @@ const StyledNav = styled.nav`
                margin-right: 3rem;
             }
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 450px) {
                margin-right: 0;
             }
         }
