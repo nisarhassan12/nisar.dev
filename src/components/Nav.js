@@ -21,7 +21,9 @@ const StyledNav = styled.nav`
         }
 
         @media(max-width: ${sizes.breakpoints.md}) {
+            justify-content: space-between;
             padding: 3rem 0;
+            width: 100%;
         }
 
     }
@@ -33,10 +35,15 @@ const StyledNav = styled.nav`
             @media(max-width: ${sizes.breakpoints.lg}) {
                margin-right: 3rem;
             }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+               margin-right: 0;
+            }
         }
     }
 
     a {
+        display: block;
         color: inherit;
     }
 `
