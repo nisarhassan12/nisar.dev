@@ -16,7 +16,6 @@ const StyledBlogPage = styled.div`
 
 const BlogPage = () => {
     const posts = usePosts()
-    console.log(posts)
     return (
         <IndexLayout canonical="/blog/" pageTitle="Blog" pageColor={colors.offWhite}>
             <StyledBlogPage>
