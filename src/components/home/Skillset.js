@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { borders } from '../../styles/variables'
 
 const StyledSkillset = styled.section`
-    border: ${borders.light1};
+    border: ${borders.light};
 
     ul {
         display: grid;
