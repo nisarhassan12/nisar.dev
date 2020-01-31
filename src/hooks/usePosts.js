@@ -29,7 +29,7 @@ const usePosts = () => {
         excerpt: node.excerpt
     }))
 
-    return posts
+    return posts.sort((a, b) => Date.parse(new Date(b.date)) - Date.parse(new Date(a.date)))
 
 }
 
