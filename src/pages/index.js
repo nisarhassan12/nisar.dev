@@ -2,7 +2,6 @@ import React from 'react'
 
 import IndexLayout from '../layouts/index'
 import Banner from '../components/Banner'
-import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 import TrustedBy from '../components/home/TrustedBy'
@@ -21,11 +20,7 @@ const StyledIndexPage = styled.div`
 const IndexPage = () => (
     <IndexLayout canonical="/">
         <StyledIndexPage>
-            <Banner 
-            title="Hi! I'm Nisar"
-            para={<p>A front end web developer and interface designer <span aria-hidden="true">&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>}
-            btn={<Link to="/contact" className="btn btn--dark">Need help? Get in touch...</Link>}
-            />
+            <Banner />
 
             {/* ----- About ----- */}
 

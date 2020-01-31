@@ -3,6 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 import Nav from './Nav'
+import { Link } from 'gatsby'
 
 const StyledBanner = styled.header`
     position: relative;
@@ -54,17 +55,17 @@ const StyledBanner = styled.header`
     }
 `
 
-const Banner = ({
-    title,
-    para,
-    btn
-}) => (
+const Banner = () => (
     <StyledBanner role="banner" className="banner row">
         <Nav />
         <div className="text-box">
-            <h1>{title}</h1>
-            { para ? para : null }
-            { btn ? btn : btn }
+            <h1>Hi! I'm Nisar</h1>
+            <p>A front end web developer and interface designer <span aria-hidden="true">&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>
+            <div className="btns">
+                <Link to="/contact" className="btn btn--dark">
+                    Need help? Get in touch ...
+                </Link>
+            </div>
         </div>
     </StyledBanner>
 )
