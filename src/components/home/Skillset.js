@@ -2,9 +2,9 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { borders } from '../../styles/variables'
+import { Link } from 'gatsby'
 
 const StyledSkillset = styled.section`
-    border: ${borders.light};
 
     ul {
         display: grid;
@@ -28,7 +28,9 @@ const Skillset = () => (
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
+                    <li>Accessibility</li>
                 </ul>
+                <Link to="/work" className="btn">My Work &nbsp;&rarr;</Link>
             </div>
         </div>
     </StyledSkillset>

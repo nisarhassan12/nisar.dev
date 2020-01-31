@@ -3,7 +3,7 @@ import React from 'react'
 import IndexLayout from '../layouts/index'
 import Banner from '../components/Banner'
 import styled from '@emotion/styled'
-import { sizes } from '../styles/variables'
+import { sizes, borders } from '../styles/variables'
 import TrustedBy from '../components/home/TrustedBy'
 import Skillset from '../components/home/Skillset'
 
@@ -13,6 +13,14 @@ const StyledIndexPage = styled.div`
             @media(max-width: 912px) {
                 display: none;
             }
+        }
+    }
+
+    section {
+        border-top: ${borders.light};
+
+        .btn {
+            margin-top: 2rem;
         }
     }
 ` 

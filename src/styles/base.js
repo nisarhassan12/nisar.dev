@@ -82,7 +82,6 @@ const GlobalStyles = () => <Global
 
         .grey-container {
             background: ${colors.offWhite};
-            border: ${borders.light};
         }
 
         /* --------------------------------------------- */
@@ -174,6 +173,7 @@ const GlobalStyles = () => <Global
             font-size: 2.2rem;
             padding: .8rem 3rem;
             border-radius: 10rem;
+            color: ${colors.darkGrey};
 
             &--dark {
                 color: ${colors.white};
