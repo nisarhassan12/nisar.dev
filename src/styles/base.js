@@ -171,7 +171,8 @@ const GlobalStyles = () => <Global
         .btn {
             display: inline-block;
             border: 1px solid;
-            padding: .6rem 2.5rem;
+            font-size: 2.2rem;
+            padding: .8rem 3rem;
             border-radius: 10rem;
 
             &--dark {
