@@ -163,6 +163,26 @@ const GlobalStyles = () => <Global
         /* ----- Buttons & Links ----- */
         /* --------------------------------------------- */
 
+        ::-moz-focus-inner {
+            border: 0;
+        }
+
+        button:focus,
+        input:focus,
+        select:focus,
+        textarea:focus,
+        a:focus {
+            outline: 2px solid #9f9f9f;
+        }
+
+        body:not(.user-is-tabbing) button:focus,
+        body:not(.user-is-tabbing) input:focus,
+        body:not(.user-is-tabbing) select:focus,
+        body:not(.user-is-tabbing) textarea:focus,
+        body:not(.user-is-tabbing) a:focus {
+            outline: none;
+        }
+
         a {
             text-decoration: none;
         }
