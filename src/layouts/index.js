@@ -14,7 +14,7 @@ const IndexLayout = ({ canonical, children, pageTitle, pageColor }) => {
     return (
         <RootLayout>
             <Helmet>
-                <meta lang="en" />
+                <html lang="en" /> 
                 <title>{pageTitle && `${pageTitle} | Nisar Hassan Naqvi` || title}</title>
                 <meta name="description" content={description} />
                 <meta name="author" content="Nisar Hassan Naqvi" />
