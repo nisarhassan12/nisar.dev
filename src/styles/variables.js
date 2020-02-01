@@ -36,5 +36,7 @@ export const borders = {
 export const shadows = {
     light: '0 1rem 2rem rgba(0,0,0, .07)',
     light1: '0 2rem 4rem rgba(0,0,0, .1)', 
-    light2: '0 1rem 5rem rgba(0,0,0,0.25);'
+    light2: '0 1rem 5rem rgba(0,0,0, 0.25)',
+    btn: '0 .8rem 1.5rem rgba(0,0,0, .15)',
+    btn1: '0 1rem 2rem rgba(0,0,0, .2)'
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
-import { colors, sizes, borders } from './variables'
+import { colors, sizes, borders, shadows } from './variables'
 
 const GlobalStyles = () => <Global 
     styles={css`
@@ -174,6 +174,8 @@ const GlobalStyles = () => <Global
             padding: .8rem 3rem;
             border-radius: 10rem;
             color: ${colors.darkGrey};
+            box-shadow: ${shadows.btn};
+            transition: all .3s;
 
             &--dark {
                 color: ${colors.white};
@@ -187,6 +189,11 @@ const GlobalStyles = () => <Global
                 background: ${colors.darkGrey};
                 color: ${colors.white};
                 border-color: ${colors.darkGrey};
+            }
+
+            &:hover,
+            &:focus {
+                box-shadow: ${shadows.btn1};
             }
         }
 
