@@ -30,6 +30,7 @@ const StyledPost = styled.article`
 
     h3 {
         font-weight: 300;
+        color: ${colors.darkGrey};
         margin-bottom: 2rem;
     }
 
