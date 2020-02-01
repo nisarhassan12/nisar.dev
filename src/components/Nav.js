@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { sizes } from '../styles/variables'
+import { sizes, colors } from '../styles/variables'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -43,18 +43,39 @@ const StyledNav = styled.nav`
     }
 
     a {
+        position: relative;
         display: block;
         color: inherit;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 100%;
+            display: block;
+            height: 1px;
+            background: ${colors.text};
+            transition: all .4s cubic-bezier(0,.5,0, 1);
+        }
+
+        &:hover::after,
+        &:focus::after {
+            right: 0;
+        }
+    }
+
+    .active {
+        text-shadow: 0 1px 0px rgba(0,0,0, .45);
     }
 `
 
 const Nav = () => (
     <StyledNav role="navigation">
         <ul>
-            <li><Link to="/">Home.</Link></li>
-            <li><Link to="/blog">Blog.</Link></li>
-            <li><Link to="/work">Work.</Link></li>
-            <li><Link to="/contact">Contact.</Link></li>
+            <li><Link activeClassName="active" to="/">Home.</Link></li>
+            <li><Link activeClassName="active" to="/blog">Blog.</Link></li>
+            <li><Link activeClassName="active" to="/work">Work.</Link></li>
+            <li><Link activeClassName="active" to="/contact">Contact.</Link></li>
         </ul>
     </StyledNav>
 )
