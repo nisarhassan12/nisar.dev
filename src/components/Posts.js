@@ -37,7 +37,7 @@ const Posts = ({posts}) => (
                 <h1 className="heading--underlined">Articles</h1>
                 <div className="post-container">
                     {
-                        posts.map(post => <Post {...post}/>)
+                        posts.map((post, i) => <Post key={i} {...post}/>)
                     }
                 </div>
            </div>
