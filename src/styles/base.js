@@ -185,6 +185,11 @@ const GlobalStyles = () => <Global
 
         a {
             text-decoration: none;
+            color: #4169E1;
+
+            &:hover {
+                color: #2A5FCD;
+            }
         }
 
         .btn {
