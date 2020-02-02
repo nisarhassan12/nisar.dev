@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import GitpodLogo from '../../resources/gitpod.svg'
 import TypeFoxLogo from '../../resources/typefox.svg'
 import TheiaLogo from '../../resources/theia.svg'
-import { sizes } from '../../styles/variables'
+import { sizes, colors } from '../../styles/variables'
 
 const StyledTrustedBy = styled.section`
 

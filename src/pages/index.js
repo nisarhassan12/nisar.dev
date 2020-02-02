@@ -3,7 +3,7 @@ import React from 'react'
 import IndexLayout from '../layouts/index'
 import Banner from '../components/Banner'
 import styled from '@emotion/styled'
-import { sizes, borders } from '../styles/variables'
+import { sizes, colors, borders } from '../styles/variables'
 import TrustedBy from '../components/home/TrustedBy'
 import Skillset from '../components/home/Skillset'
 
@@ -22,6 +22,10 @@ const StyledIndexPage = styled.div`
         .btn {
             margin-top: 2rem;
         }
+
+        &:nth-of-type(2n + 1) {
+            background: ${colors.offWhite};
+        }
     }
 ` 
 
@@ -32,7 +36,7 @@ const IndexPage = () => (
 
             {/* ----- About ----- */}
 
-            <section className="about grey-container">
+            <section>
                 <div className="row">
                     <div className="wrapper">
                         <h2 className="heading--underlined">About Me</h2>
