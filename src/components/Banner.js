@@ -61,11 +61,7 @@ const Banner = () => (
         <div className="text-box">
             <h1>Hi! I'm Nisar</h1>
             <p>A front end web developer and interface designer <span aria-hidden="true">&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>
-            <div className="btns">
-                <Link to="/contact" className="btn btn--dark">
-                    Need help? Get in touch ...
-                </Link>
-            </div>
+            <a href="mailto:syednisarhassan12@gmail.com" className="btn btn--dark">Need help? get in touch ...</a>
         </div>
     </StyledBanner>
 )
