@@ -1,6 +1,17 @@
 module.exports = {
     siteMetadata: {
-        title: "Nisar Hassan Naqvi - Frontend UX Engineer & Open Sourcerer.",
-        description: "Nisar Hassan Naqvi is Pakistani Front-end Frontend UX Engineer & Open Sourcerer who builds inclusive, accessible, performant and etihical products with thoughtful practices."
-    }
+        title: "Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer",
+        description: "A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here."
+    },
+    plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `blog`,
+                path: `${__dirname}/src/blog`
+            }
+        }
+    ]
 }
