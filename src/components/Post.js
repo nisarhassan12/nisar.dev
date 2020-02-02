@@ -52,7 +52,7 @@ const Post = ({title, date, image, excerpt, slug}) => (
                 className="img" 
                 aria-hidden="true"
                 style={{
-                    backgroundImage: `url(${image})`,
+                    backgroundImage: `url(/${image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}

@@ -32,6 +32,8 @@ class IndexLayout extends React.Component {
 
     render() {
         const { canonical, children, pageTitle, pageColor } = this.props
+        const prevewURL = 'https://user-images.githubusercontent.com/46004116/73603649-7ef40e00-45a7-11ea-8f35-6c2955103772.png'
+        
         return (
             <StaticQuery 
                 query={graphql`
@@ -54,23 +56,28 @@ class IndexLayout extends React.Component {
                         {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
                         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
                         
+                        <meta property="og:url" content={`https://nisar.dev/`} />
+                        <meta property="og:title" content={data.site.siteMetadata.title} />
+                        <meta property="og:description" content={data.site.siteMetadata.subtitle} />
+                        <meta property="og:image" content={prevewURL} />
+
                         {/* <!-- Google Meta Tags --> */}
                         <meta itemprop="name" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
                         <meta itemprop="description" content="A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here." />
-                        <meta itemprop="image" content="/site.png" />
+                        <meta itemprop="image" content={prevewURL} />
 
                         {/* <!-- Facebook Meta Tags --> */}
                         <meta property="og:url" content="https://nisar.dev" />
                         <meta property="og:type" content="website" />
                         <meta property="og:title" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
                         <meta property="og:description" content="A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here." />
-                        <meta property="og:image" content="/site.png" />
+                        <meta property="og:image" content={prevewURL} />
 
                         {/* <!-- Twitter Meta Tags --> */}
                         <meta name="twitter:card" content="summary_large_image" />
                         <meta name="twitter:title" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
                         <meta name="twitter:description" content="A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here." />
-                        <meta name="twitter:image" content="/site.png" />
+                        <meta name="twitter:image" content={prevewURL} />
                     </Helmet>
                     <Global styles={css`
                         body {

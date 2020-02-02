@@ -2,7 +2,8 @@
 title: Frictionless Open Source Contributions with a single click
 subtitle: Frictionless Open Source Contributions with a single click using Gitpod.
 date: Monday Oct 14 2019
-image: /frictionless-oss-contributions.png
+image: frictionless-oss-contributions.png
+teaserImage: https://user-images.githubusercontent.com/46004116/73603242-2110f780-45a2-11ea-9a0a-7f9fa158acfa.png
 keywords: 'opensource, opensource contributions'
 ---
 
