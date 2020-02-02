@@ -53,6 +53,24 @@ class IndexLayout extends React.Component {
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
                         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
+                        
+                        {/* <!-- Google Meta Tags --> */}
+                        <meta itemprop="name" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
+                        <meta itemprop="description" content="A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here." />
+                        <meta itemprop="image" content="/site.png" />
+
+                        {/* <!-- Facebook Meta Tags --> */}
+                        <meta property="og:url" content="https://nisar.dev" />
+                        <meta property="og:type" content="website" />
+                        <meta property="og:title" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
+                        <meta property="og:description" content="A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here." />
+                        <meta property="og:image" content="/site.png" />
+
+                        {/* <!-- Twitter Meta Tags --> */}
+                        <meta name="twitter:card" content="summary_large_image" />
+                        <meta name="twitter:title" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
+                        <meta name="twitter:description" content="A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here." />
+                        <meta name="twitter:image" content="/site.png" />
                     </Helmet>
                     <Global styles={css`
                         body {
