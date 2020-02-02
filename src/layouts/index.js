@@ -8,6 +8,8 @@ import Nav from '../components/Nav'
 import Footer from '../styles/Footer'
 import { Global, css } from '@emotion/core'
 
+const prevewURL = 'https://user-images.githubusercontent.com/46004116/73611800-69163580-4607-11ea-9bc2-a2471b084fc0.png'
+
 class IndexLayout extends React.Component {
 
      handleFirstTab = (e) => {
@@ -32,7 +34,6 @@ class IndexLayout extends React.Component {
 
     render() {
         const { canonical, children, pageTitle, pageColor, pageDescription } = this.props
-        const prevewURL = 'https://user-images.githubusercontent.com/46004116/73603649-7ef40e00-45a7-11ea-8f35-6c2955103772.png'
         
         return (
             <StaticQuery 
