@@ -4,6 +4,7 @@ module.exports = {
         description: "A personal site for Nisar Hassan Naqvi a front end web developer and interface designer and who builds UX rich accessible & performant websites. Checkout his latest articles, projects, experiments and open source work here."
     },
     plugins: [
+        `gatsby-plugin-react-helmet`,
         `gatsby-transformer-remark`,
         {
             resolve: `gatsby-source-filesystem`,
