@@ -24,7 +24,7 @@ export const query = graphql`
 `
 
 const PostTemplate = ({data: {markdownRemark: post}}) => (
-    <BlogLayout canonical={`/blog/${post.fields.slug}`} pageTitle={post.frontmatter.title}>
+    <BlogLayout canonical={`/blog/${post.fields.slug}/`} pageTitle={post.frontmatter.title}>
         <Helmet>
             <meta name="description" content={post.frontmatter.subtitle} />
             <meta name="keywords" content={post.frontmatter.keywords}/>

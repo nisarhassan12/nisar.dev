@@ -30,7 +30,7 @@ const Skillset = () => (
                     <li>JavaScript</li>
                     <li>Accessibility</li>
                 </ul>
-                <Link to="/work" className="btn">My Work &nbsp;&rarr;</Link>
+                <Link to="/work/" className="btn">My Work &nbsp;&rarr;</Link>
             </div>
         </div>
     </StyledSkillset>

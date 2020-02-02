@@ -46,7 +46,7 @@ const StyledPost = styled.article`
 `
 
 const Post = ({title, date, image, excerpt, slug}) => (
-    <Link to={`/blog/${slug}`}>
+    <Link to={`/blog/${slug}/`}>
         <StyledPost className="post">
             <div 
                 className="img" 
@@ -61,7 +61,7 @@ const Post = ({title, date, image, excerpt, slug}) => (
                 <h3>{title}</h3>
                 <p>{(new Date(date)).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}</p>
                 <p>{excerpt}</p>
-                <Link to={`/blog/${slug}`} className="btn btn--small">Read More &nbsp;&rarr;</Link>
+                <Link to={`/blog/${slug}/`} className="btn btn--small">Read More &nbsp;&rarr;</Link>
             </div>
         </StyledPost>
     </Link>
