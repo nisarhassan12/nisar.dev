@@ -54,7 +54,7 @@ const StyledNav = styled.nav`
             right: 100%;
             display: block;
             height: 1px;
-            background: ${colors.text};
+            background: #7f7f7f;
             transition: all .4s cubic-bezier(0,.5,0, 1);
         }
 
