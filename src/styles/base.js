@@ -183,10 +183,6 @@ const GlobalStyles = () => <Global
         a {
             text-decoration: none;
             color: #0269A4;
-
-            &:hover {
-                color: #2A5FCD;
-            }
         }
 
         .btn {
@@ -202,16 +198,15 @@ const GlobalStyles = () => <Global
             &:hover,
             &:focus {
                 box-shadow: ${shadows.btn1};
-                color: ${colors.darkGrey};
             }
 
             &--dark {
-                color: ${colors.white};
-                background: ${colors.darkGrey};
-                border: 1px solid ${colors.darkGrey};
-                
-                &:hover {
+                &,
+                &:active,
+                &:visited {
                     color: ${colors.white};
+                    background: ${colors.darkGrey};
+                    border: 1px solid ${colors.darkGrey};
                 }
             }
 
