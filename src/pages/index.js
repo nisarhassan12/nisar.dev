@@ -23,7 +23,7 @@ const StyledIndexPage = styled.div`
             margin-top: 2rem;
         }
 
-        &:nth-of-type(2n + 1) {
+        &:nth-of-type(2n + 2) {
             background: ${colors.offWhite};
         }
     }

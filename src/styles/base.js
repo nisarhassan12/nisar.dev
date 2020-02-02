@@ -93,6 +93,7 @@ const GlobalStyles = () => <Global
         h3,
         h4 {
             line-height: 1.1;
+            font-weight: 300;
         }
 
         h1 {
@@ -103,11 +104,11 @@ const GlobalStyles = () => <Global
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                font-size: 3.7rem;
+                font-size: 4rem;
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 3.2rem;
+                font-size: 3.8rem;
             }
         }
 
@@ -128,13 +129,9 @@ const GlobalStyles = () => <Global
         }
 
         h3 {
-            font-size: 2.9rem;
+            font-size: 2.8rem;
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                font-size: 2.7rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.lg}) {
+            @media(max-width: ${sizes.breakpoints.sm}) {
                 font-size: 2.6rem;
             }
 
@@ -145,7 +142,7 @@ const GlobalStyles = () => <Global
                 &::after {
                     content: "";
                     display: block;
-                    margin: 2.5rem 0;
+                    margin: 2rem 0 2.5rem;
                     height: 2px;
                     width: 12rem;
                     background: ${colors.darkGrey};
@@ -221,9 +218,6 @@ const GlobalStyles = () => <Global
             &--small {
                 font-size: 1.9rem;
                 padding: .3rem 2rem;
-                background: ${colors.darkGrey};
-                color: ${colors.white};
-                border-color: ${colors.darkGrey};
             }
         }
 
