@@ -1,7 +1,9 @@
 ---
 title: A free Open-source Portfolio template for web developers
+subtitle: A free Open-source beautiful and customizable portfolio template for anyone to freely use as their own or customize to their liking. Built only with HTML, SCSS and Vanilla JS.
 date: Sunday Dec 14 2019
 image: /free-oss-portfolio-template.png
+keywords: 'opensource, portfolio'
 ---
 
 A beautiful lightweight, customizable, accessible and performant single-page personal portfolio website for anyone to use as their own or customize the way they like.
