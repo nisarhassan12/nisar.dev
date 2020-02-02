@@ -64,7 +64,7 @@ const StyledProject = styled.div`
 
     p {
         @media(min-width: ${sizes.breakpoints.lgx}) {
-            font-size: 95%;
+            font-size: 90%;
         }
     }
 
