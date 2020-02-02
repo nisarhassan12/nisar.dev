@@ -185,7 +185,7 @@ const GlobalStyles = () => <Global
 
         a {
             text-decoration: none;
-            color: #4169E1;
+            color: #0269A4;
 
             &:hover {
                 color: #2A5FCD;
@@ -202,10 +202,20 @@ const GlobalStyles = () => <Global
             box-shadow: ${shadows.btn};
             transition: all .3s;
 
+            &:hover,
+            &:focus {
+                box-shadow: ${shadows.btn1};
+                color: ${colors.darkGrey};
+            }
+
             &--dark {
                 color: ${colors.white};
                 background: ${colors.darkGrey};
-                border: 1px solid ${colors.darkGrey};            
+                border: 1px solid ${colors.darkGrey};
+                
+                &:hover {
+                    color: ${colors.white};
+                }
             }
 
             &--small {
@@ -214,11 +224,6 @@ const GlobalStyles = () => <Global
                 background: ${colors.darkGrey};
                 color: ${colors.white};
                 border-color: ${colors.darkGrey};
-            }
-
-            &:hover,
-            &:focus {
-                box-shadow: ${shadows.btn1};
             }
         }
 
