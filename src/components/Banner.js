@@ -13,7 +13,8 @@ const StyledBanner = styled.header`
     background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .9)), url(${Bg});
     background-size: cover;
     color: ${colors.white};
-    background-position: center;
+    background-position: top;
+    background-attachment: fixed;
 
     .text-box {
         position: absolute;
