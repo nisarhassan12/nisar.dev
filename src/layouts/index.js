@@ -33,7 +33,7 @@ class IndexLayout extends React.Component {
     }
 
     render() {
-        const { canonical, children, pageTitle, pageColor, pageDescription } = this.props
+        const { canonical, externalCanonical, children, pageTitle, pageColor, pageDescription } = this.props
         
         return (
             <StaticQuery 
@@ -54,7 +54,8 @@ class IndexLayout extends React.Component {
                         <meta name="description" content={data.site.siteMetadata.description} />
                         <meta name="author" content="Nisar Hassan Naqvi" />
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
-                        {canonical ? <link rel="canonical" href={`https://www.typefox.io${canonical}`} /> : null}
+                        {(canonical && !externalCanonical) ? <link rel="canonical" href={`https://nisar.dev${canonical}`} /> : null}
+                        {externalCanonical ? <link rel="canonical" href={externalCanonical} /> : null}
                         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
                         
                         <meta property="og:url" content={`https://nisar.dev/`} />

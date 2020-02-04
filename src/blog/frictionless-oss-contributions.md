@@ -5,6 +5,7 @@ date: Monday Oct 14 2019
 image: frictionless-oss-contributions.png
 teaserImage: https://user-images.githubusercontent.com/46004116/73603242-2110f780-45a2-11ea-9a0a-7f9fa158acfa.png
 keywords: 'opensource, opensource contributions'
+externalCanonical: https://www.gitpod.io/blog/frictionless-oss-contributions/
 ---
 
 <style>

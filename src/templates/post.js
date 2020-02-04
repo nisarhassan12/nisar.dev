@@ -14,6 +14,7 @@ export const query = graphql`
                 image
                 teaserImage
                 keywords
+                externalCanonical
             }
             excerpt
             fields {
@@ -26,7 +27,8 @@ export const query = graphql`
 
 const PostTemplate = ({data: {markdownRemark: post}}) => (
     <BlogLayout 
-        canonical={`/blog${post.fields.slug}/` || `${post.fields.slug.toLowerCase()}`} 
+        canonical={`/blog/${post.fields.slug}/` || `${post.fields.slug.toLowerCase()}`} 
+        externalCanonical={post.frontmatter.externalCanonical}
         pageTitle={post.frontmatter.title}
     >
         <Helmet>

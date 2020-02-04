@@ -57,8 +57,8 @@ const StyledBlogLayout = styled.div`
 `
 
 
-const BlogLayout  = ({ canonical, children, pageTitle }) => (
-    <IndexLayout canonical={canonical} pageTitle={pageTitle} pageColor={colors.offWhite}>
+const BlogLayout  = ({ canonical, externalCanonical, children, pageTitle }) => (
+    <IndexLayout canonical={canonical} externalCanonical={externalCanonical} pageTitle={pageTitle} pageColor={colors.offWhite}>
         <StyledBlogLayout>
             <div className="container row">
                 {children}
