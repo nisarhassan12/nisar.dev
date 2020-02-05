@@ -50,8 +50,8 @@ const Footer = () => (
                 <li><a href="https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/" target="_blank" rel="noreferrer">Linkedin</a></li>
             </ul>
             <div className="info">
-                <p>&copy; 2019. All rights reserved.</p>
-                <p>Crafted within Lahore by Nisar.</p>
+                <p>&copy; 2020. All rights reserved.</p>
+                <p>Crafted within Lahore by <a href="https://twitter.com/nisarhassan" target="_blank">Nisar</a>.</p>
             </div>
         </div>
     </StyledFooter>
