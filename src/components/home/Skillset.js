@@ -28,6 +28,7 @@ const Skillset = () => (
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
+                    <li>React</li>
                     <li>Accessibility</li>
                 </ul>
                 <Link to="/work/" className="btn">My Work &nbsp;&rarr;</Link>
