@@ -60,12 +60,10 @@ const TrustedBy  = () => (
                     <div className="logos">
                         {
                             companies.map((c, i) => 
-                                <a href={c.url} target="_blank">
-                                    <img 
-                                        src={c.img}
-                                        alt={c.alt}
-                                    />
-                                </a>
+                                <img 
+                                    src={c.img}
+                                    alt={c.alt}
+                                />
                             )
                         }
                     </div>
