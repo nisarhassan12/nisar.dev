@@ -8,7 +8,7 @@ import Nav from '../components/Nav'
 import Footer from '../styles/Footer'
 import { Global, css } from '@emotion/core'
 
-const prevewURL = 'https://user-images.githubusercontent.com/46004116/73611800-69163580-4607-11ea-9bc2-a2471b084fc0.png'
+const prevewURL = 'https://user-images.githubusercontent.com/46004116/74350530-a9c83880-4dd7-11ea-8578-05610cf855aa.png'
 
 class IndexLayout extends React.Component {
 
