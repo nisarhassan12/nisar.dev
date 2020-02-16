@@ -57,11 +57,6 @@ const StyledProject = styled.div`
         }
     }
 
-    // h3 {
-    //     font-size: 3.8rem;
-    //     font-weight: 300;
-    // }
-
     p {
         @media(min-width: ${sizes.breakpoints.lgx}) {
             font-size: 90%;
@@ -83,7 +78,7 @@ const Project = ({ title, description, path, video, url }) => (
             <div className="text">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a className="btn btn--small btn--dark" href={url}>Visit site &nbsp;&rarr;</a>
+                <a className="btn btn--small btn--dark" target="_blank" href={url}>Visit site &nbsp;&rarr;</a>
             </div>
         </div>
     </StyledProject>
