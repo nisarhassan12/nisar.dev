@@ -56,8 +56,8 @@ class IndexLayout extends React.Component {
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {(canonical && !externalCanonical) ? <link rel="canonical" href={`https://nisar.dev${canonical}`} /> : null}
                         {externalCanonical ? <link rel="canonical" href={externalCanonical} /> : null}
-                        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet" />
-                        
+                        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap" rel="stylesheet" />
+
                         <meta property="og:url" content={`https://nisar.dev/`} />
                         <meta property="og:title" content={pageTitle && `${pageTitle} | Nisar Hassan Naqvi` || data.site.siteMetadata.title}/>
                         <meta property="og:description" content={pageDescription || data.site.siteMetadata.description} />
