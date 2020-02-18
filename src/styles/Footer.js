@@ -51,7 +51,7 @@ const Footer = () => (
             </ul>
             <div className="info">
                 <p>&copy; 2020. All rights reserved.</p>
-                <p>Crafted within Lahore by <a href="https://twitter.com/nisarhassan" target="_blank">Nisar</a>.</p>
+                <p>Crafted within Lahore by <a href="https://twitter.com/nisarhassan12" target="_blank">Nisar</a>.</p>
             </div>
         </div>
     </StyledFooter>
