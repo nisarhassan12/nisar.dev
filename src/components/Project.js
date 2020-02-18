@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { shadows, sizes } from '../styles/variables'
+import GithubMark from '../resources/githubmark.svg'
 
 const StyledProject = styled.div`
     display: flex;
@@ -57,6 +58,17 @@ const StyledProject = styled.div`
         }
     }
 
+    a {
+        display: inline-block;
+    }
+
+    .githubmark {
+        display: inline-block;
+        height: 2.6rem;
+        margin: 0 2rem;
+        transform: translateY(.6rem);
+    }
+
     p {
         @media(min-width: ${sizes.breakpoints.lgx}) {
             font-size: 90%;
@@ -65,7 +77,7 @@ const StyledProject = styled.div`
 
 `
 
-const Project = ({ title, description, path, video, url }) => (
+const Project = ({ title, description, path, video, url, repo }) => (
     <StyledProject>
         <a className="preview" href={url} target="_blank">
             { !video ? 
@@ -79,6 +91,11 @@ const Project = ({ title, description, path, video, url }) => (
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <a className="btn btn--small btn--dark" target="_blank" href={url}>Visit site &nbsp;&rarr;</a>
+                { repo ? 
+                    <a href={`https://github.com/${repo}/`} target="_blank">
+                        <img className="githubmark" src={GithubMark} />
+                    </a> 
+                : null }
             </div>
         </div>
     </StyledProject>

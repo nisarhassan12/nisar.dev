@@ -25,13 +25,15 @@ const projects = [
         video: '/portfolio.mp4',
         description: 'A free open source portfolio template for web developers for anyone to use as their own or customize the way they like.',
         title: 'Portfolio template',
-        url: 'https://nisar.surge.sh'
+        url: 'https://nisar.surge.sh',
+        repo: 'nisarhassan12/portfolio'
     },
     {
         path: GitpodPreview,
         description: 'Website for a free online IDE that launches ready to code workspaces with a single click.',
         title: 'gitpod.io',
-        url: 'https://gitpod.io'
+        url: 'https://gitpod.io',
+        repo: 'gitpod-io/website'
     },
     {
         path: TheiaPreview,
