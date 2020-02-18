@@ -66,7 +66,7 @@ const StyledProject = styled.div`
         display: inline-block;
         height: 2.6rem;
         margin: 0 2rem;
-        transform: translateY(.6rem);
+        transform: translateY(.7rem);
     }
 
     p {

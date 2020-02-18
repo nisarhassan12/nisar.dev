@@ -5,7 +5,7 @@ import Banner from '../components/Banner'
 import styled from '@emotion/styled'
 import { sizes, colors, borders } from '../styles/variables'
 import TrustedBy from '../components/home/TrustedBy'
-import Skillset from '../components/home/Skillset'
+import Craft from '../components/home/Craft'
 
 const StyledIndexPage = styled.div`
     .about {
@@ -47,9 +47,9 @@ const IndexPage = () => (
                 </div>
             </section>
 
-        {/* ----- My Skillset ----- */}
+        {/* ----- My Craft ----- */}
 
-        <Skillset />
+        <Craft />
             
 
         {/* ----- Trusted By ----- */}
