@@ -19,7 +19,8 @@ export const sizes = {
         lgm: '930px',
         lg: '800px',
         md: '600px',
-        sm: '400px'
+        sm: '400px',
+        xsm: '320px'
     },
     grid: {
         maxWidth: '114rem',

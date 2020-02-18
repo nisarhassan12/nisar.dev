@@ -195,6 +195,11 @@ const GlobalStyles = () => <Global
             box-shadow: ${shadows.btn};
             transition: all .3s;
 
+            @media(max-width: ${sizes.breakpoints.xsm}) {
+                font-size: 2rem;
+                padding: .7rem 2.2rem;
+            }
+
             &:hover,
             &:focus {
                 box-shadow: ${shadows.btn1};
