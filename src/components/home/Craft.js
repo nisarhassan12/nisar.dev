@@ -82,7 +82,7 @@ const Craft = () => (
         <div className="row">
             <div className="wrapper">
                 <h2 className="heading--underlined">My Craft in a Nutshell</h2>
-                <p>I love simplicity so I try making things as simple as possible. I am also very concerned about best practices and always sacrifice developer experience over user experience.</p>
+                <p>I believe simplicity is undervalued and therefore strive to make things as simple as possible. I am also very concerned about best practices and always sacrifice developer experience over user experience.</p>
             </div>
         </div>
         <div className="work">
