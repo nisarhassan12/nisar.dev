@@ -64,7 +64,7 @@ const StyledCraft = styled.section`
 const projects = [
     {
         video: '/portfolio.mp4',
-        href: 'https://nisar.suge.sh'
+        href: 'https://nisar.surge.sh'
     },
     {
         img: Theia,
