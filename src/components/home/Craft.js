@@ -14,6 +14,19 @@ const StyledCraft = styled.section`
         padding: 4rem 0 5rem;
         margin-bottom: 2rem;
         overflow-x: scroll;
+        margin-left: calc((100% - ${sizes.grid.maxWidth})/2);
+
+        @media(max-width: ${sizes.breakpoints.lgx}) {
+            margin-left: 7rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            margin-left: 4rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            margin-left: 2rem;
+        }
     }
 
     video, img {
@@ -52,7 +65,7 @@ const projects = [
     {
         video: '/portfolio.mp4',
         href: 'https://nisar.suge.sh'
-    }, 
+    },
     {
         img: Theia,
         href: 'https://theia-ide.org'
@@ -67,29 +80,26 @@ const projects = [
 const Craft = () => (
     <StyledCraft>
         <div className="row">
-                <div className="wrapper">
-                    <h2 className="heading--underlined">My Craft in a Nutshell</h2>
-                    <p>I love simplicity so I try making things as simple as possible. I am also very concerned about best practices and always sacrifice developer experience over user experience.</p>
-                </div>
+            <div className="wrapper">
+                <h2 className="heading--underlined">My Craft in a Nutshell</h2>
+                <p>I love simplicity so I try making things as simple as possible. I am also very concerned about best practices and always sacrifice developer experience over user experience.</p>
+            </div>
         </div>
-
-        <div className="row">
-            <div className="work">
+        <div className="work">
             {
                 projects.map((project, i) => (
                     <a key={i} href={project.href} target="_blank" title={`Website: ${project.href}`}>
                         {
-                            project.video ? 
-                            <video autoPlay loop muted playsInline>
-                                <source src={project.video} type="video/mp4"/>
-                            </video>
-                            :
-                            <img src={project.img} alt={project.href.split('//')[1]}/>
+                            project.video ?
+                                <video autoPlay loop muted playsInline>
+                                    <source src={project.video} type="video/mp4" />
+                                </video>
+                                :
+                                <img src={project.img} alt={project.href.split('//')[1]} />
                         }
                     </a>
                 ))
             }
-            </div>
         </div>
 
         <div className="row">
