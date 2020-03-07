@@ -74,7 +74,7 @@ const Banner = () => (
             <div className="text-box">
                 <h1>Hi! I'm Nisar</h1>
                 <p>A front end web developer and interface designer <span aria-hidden="true">&mdash;</span><br/>who builds UX rich, accessible & perfomant websites.</p>
-                <Link to="/contact/" className="btn">Need help? get in touch ...</Link>
+                <Link to="/contact/" className="btn">Need help? Get in touch ...</Link>
             </div>
         </div>
     </StyledBanner>
