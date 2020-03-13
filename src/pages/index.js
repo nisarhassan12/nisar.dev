@@ -8,11 +8,9 @@ import TrustedBy from '../components/home/TrustedBy'
 import Craft from '../components/home/Craft'
 
 const StyledIndexPage = styled.div`
-    .about {
-        .hack {
-            @media(max-width: 912px) {
-                display: none;
-            }
+    .hack {
+        @media(max-width: 912px) {
+            display: none;
         }
     }
 
