@@ -17,7 +17,7 @@ const StyledContactPage = styled.div`
     }
 
     .btn {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 
 `
