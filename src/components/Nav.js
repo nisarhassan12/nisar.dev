@@ -33,7 +33,7 @@ const StyledNav = styled.nav`
             margin-right: 5rem;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-               margin-right: 3rem;
+               margin-right: 4rem;
             }
 
             @media(max-width: 450px) {
@@ -72,10 +72,9 @@ const StyledNav = styled.nav`
 const Nav = () => (
     <StyledNav role="navigation">
         <ul>
-            <li><Link activeClassName="active" to="/">Home.</Link></li>
-            <li><Link activeClassName="active" to="/blog/">Blog.</Link></li>
-            <li><Link activeClassName="active" to="/work/">Work.</Link></li>
-            <li><Link activeClassName="active" to="/contact/">Contact.</Link></li>
+            <li><Link activeClassName="active" to="/">Home</Link></li>
+            <li><Link activeClassName="active" to="/blog/">Blog</Link></li>
+            <li><Link activeClassName="active" to="/contact/">Contact</Link></li>
         </ul>
     </StyledNav>
 )
