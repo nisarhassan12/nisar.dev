@@ -135,11 +135,6 @@ const GlobalStyles = () => <Global
             font-weight: 300;
         }
 
-        h1, 
-        h2 {
-            font-weight: 300;
-        }
-
         h1 {
             font-size: var(--font-size-large);
 
@@ -287,14 +282,6 @@ const GlobalStyles = () => <Global
         /* --------------------------------------------- */
         /* ----- Others ----- */
         /* --------------------------------------------- */
-
-        input, 
-        textarea,
-        button {
-            font-family: inherit;
-            font-weight: 300;
-            font-size: inherit;
-        }
 
         br {
             @media(max-width: ${sizes.breakpoints.sm}) {

@@ -59,7 +59,7 @@ class IndexLayout extends React.Component {
                         {externalCanonical ? <link rel="canonical" href={externalCanonical} /> : null}
                         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap" rel="stylesheet" />
                         
-                                <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+                        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
                         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
                         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
                         <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
@@ -99,6 +99,7 @@ class IndexLayout extends React.Component {
                         <meta name="twitter:title" content="Nisar Hassan Naqvi - Frontend Web Developer and Interface Designer" />
                         <meta name="twitter:description" content={pageDescription || data.site.siteMetadata.description} />
                         <meta name="twitter:image" content={prevewURL} />
+                        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300&display=swap" rel="stylesheet" /> 
                     </Helmet>
                     <Global styles={css`
                         body {
