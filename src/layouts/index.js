@@ -7,6 +7,7 @@ import MainLayout from '../components/MainLayout'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import { Global, css } from '@emotion/core'
+import BackToTop from '../components/BackToTopButton'
 
 const prevewURL = 'https://user-images.githubusercontent.com/46004116/74350530-a9c83880-4dd7-11ea-8578-05610cf855aa.png'
 
@@ -118,6 +119,7 @@ class IndexLayout extends React.Component {
                             </>
                     }
                     <Footer />
+                    <BackToTop />
                 </RootLayout>}
             />
         )
