@@ -1,12 +1,12 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, borders, sizes } from '../styles/variables'
+import { shadows, borders, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
 
 const StyledPost = styled.article`
     display: flex;
-    background: ${colors.white};
+    background: var(--white);
     box-shadow: ${shadows.light};
 
     @media(max-width: ${sizes.breakpoints.lgm}) {
@@ -29,18 +29,17 @@ const StyledPost = styled.article`
     }
 
     h3 {
-        font-weight: 300;
-        color: ${colors.darkGrey};
-        margin-bottom: 2rem;
+        color: var(--darkGrey);
+        margin-bottom: var(--gutter-small);
     }
 
     p {
         line-height: 1.4;
-        margin: 2rem 0;
+        margin: var(--gutter-small) 0;
     }
 
     .btn {
-        color: ${colors.white};
+        color: var(--white);
     }
 
 `

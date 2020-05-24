@@ -4,7 +4,7 @@ import IndexLayout from './index'
 import Nav from '../components/Nav'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { sizes, colors, borders, shadows } from '../styles/variables'
+import { sizes, borders, shadows } from '../styles/variables'
 
 const StyledBlogLayout = styled.div`
     margin: 7rem 0;
@@ -14,7 +14,7 @@ const StyledBlogLayout = styled.div`
     }
 
     .container {
-        background: ${colors.white};
+        background: var(--white);
         box-shadow: ${shadows.light};
         border: ${borders.light1};
         padding: 5rem 3rem;
@@ -35,7 +35,7 @@ const StyledBlogLayout = styled.div`
     blockquote {
         margin: 3rem 0;
         padding: .5rem 1.5rem; 
-        background: ${colors.offWhite};
+        background: var(--offWhite);
         font-size: 90%;
         border: 1px solid #eee;
         border-left: ${borders.light};
@@ -57,14 +57,16 @@ const StyledBlogLayout = styled.div`
 `
 
 
-const BlogLayout  = ({ canonical, externalCanonical, children, pageTitle }) => (
-    <IndexLayout canonical={canonical} externalCanonical={externalCanonical} pageTitle={pageTitle} pageColor={colors.offWhite}>
+const BlogLayout = ({ canonical, externalCanonical, children, pageTitle }) => (
+    <IndexLayout canonical={canonical} externalCanonical={externalCanonical} pageTitle={pageTitle} pageColor={'var(--offWhite)'}>
         <StyledBlogLayout>
             <div className="container row">
                 {children}
             </div>
-            <div class="back row">
-                <Link to="/blog">Go Back &nbsp;&rarr;</Link>
+            <div className="row">
+                <div class="back">
+                    <Link to="/blog">Go Back &nbsp;&rarr;</Link>
+                </div>
             </div>
         </StyledBlogLayout>
     </IndexLayout>

@@ -3,7 +3,7 @@ import React from 'react'
 import IndexLayout from '../layouts/index'
 import Banner from '../components/Banner'
 import styled from '@emotion/styled'
-import { sizes, colors, borders } from '../styles/variables'
+import { borders } from '../styles/variables'
 import TrustedBy from '../components/home/TrustedBy'
 import Work from '../components/Work'
 
@@ -17,12 +17,8 @@ const StyledIndexPage = styled.div`
     section {
         border-top: ${borders.light};
 
-        .btn {
-            margin-top: 2rem;
-        }
-
         &:nth-of-type(2n + 2) {
-            background: ${colors.offWhite};
+            background: var(--offWhite);
         }
     }
 `

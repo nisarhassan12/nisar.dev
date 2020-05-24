@@ -10,12 +10,12 @@ const StyledProject = styled.div`
 
 
     @media(max-width: 1280px) {
-        flex-direction: column;
-        max-width: ${sizes.grid.smallWrapperWidth};
+        flex-direction: column-reverse;
+        max-width: var(--smallWrapperWidth);
     }
 
     &:not(:last-of-type) {
-        margin-bottom: 14rem;
+        margin-bottom: var(--gutter-huge);
     }
 
     .preview {
@@ -25,12 +25,11 @@ const StyledProject = styled.div`
         transition: all .25s;
 
         @media(max-width: 1280px) {
-            margin-bottom: 5rem;
+            margin-bottom: var(--gutter-medium);
         }
 
         @media(min-width: 1280px) {
-            flex-basis: 70%;
-            max-width: 70rem;
+            flex: 0 0 65%;
         }
 
         img, video {
@@ -48,56 +47,77 @@ const StyledProject = styled.div`
             display: flex;
             align-items: center;
             flex: 1;
-            padding-left: 5rem;
+            padding-right: 5rem;
         }
     }
 
-    .text {
-        & > * {
-            margin-bottom: 2rem;
-        }
+    ul {
+        font-size: 80%;
+        list-style: initial;
+        list-style-position: inside;
+        font-family: 'Jost';
+        margin-bottom: var(--gutter-small)
     }
 
-    a {
-        display: inline-block;
+    .links {
+        display: flex;
+        align-items: center;
+    }
+
+    .repo {
+        transition: .2s;
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
     }
 
     .githubmark {
-        display: inline-block;
+        display: block;
         height: 2.6rem;
         margin: 0 2rem;
-        transform: translateY(.7rem);
     }
 
     p {
+        margin: var(--gutter-small) 0;
+        font-size: var(--font-size-small);
+        max-width: var(--xSmallWrapperWidth);
+
         @media(min-width: ${sizes.breakpoints.lgx}) {
-            font-size: 90%;
+            font-size: var(--font-size-x-small);
         }
     }
 
 `
 
-const Project = ({ title, description, path, video, url, repo }) => (
+const Project = ({ title, description, tools, path, video, url, repo }) => (
     <StyledProject>
-        <a className="preview" href={url} target="_blank">
-            { !video ? 
-                <img alt={title} src={path}/> :
-                <video autoPlay loop muted playsInline>
-                    <source src={video} type="video/mp4"/>
-                </video> }
-        </a>
         <div className="content">
             <div className="text">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a className="btn btn--small btn--dark" target="_blank" href={url}>Visit site &nbsp;&rarr;</a>
-                { repo ? 
-                    <a href={`https://github.com/${repo}/`} target="_blank">
-                        <img className="githubmark" src={GithubMark} />
-                    </a> 
-                : null }
+                { tools && tools.length ? 
+                    <ul>
+                        {tools.map(t => <li>{t}</li>)}
+                    </ul> : null
+                }
+                <div className="links">
+                    <a className="btn btn--small btn--dark" target="_blank" href={url}>Visit site &nbsp;&rarr;</a>
+                    {repo ?
+                        <a href={`https://github.com/${repo}/`} className="repo" target="_blank">
+                            <img className="githubmark" src={GithubMark} />
+                        </a>
+                        : null}
+                </div>
             </div>
         </div>
+        <a className="preview" href={url} target="_blank">
+            {!video ?
+                <img alt={title} src={path} /> :
+                <video autoPlay loop muted playsInline>
+                    <source src={video} type="video/mp4" />
+                </video>}
+        </a>
     </StyledProject>
 )
 

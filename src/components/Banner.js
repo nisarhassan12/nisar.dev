@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes, colors } from '../styles/variables'
+import { sizes, shadows } from '../styles/variables'
 import Nav from './Nav'
 import { Link } from 'gatsby'
 import Bg from '../resources/bg.jpg'
@@ -12,7 +12,7 @@ const StyledBanner = styled.header`
     height: 100vh;
     background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .9)), url(${Bg});
     background-size: cover;
-    color: ${colors.white};
+    color: var(--white);
     background-position: top;
     background-attachment: fixed;
 
@@ -24,11 +24,10 @@ const StyledBanner = styled.header`
     }
 
     h1 {
-        font-size: 7.5rem;
-        font-weight: 300;
+        font-size: 8.5rem;
 
         @media(max-width: ${sizes.breakpoints.lg}) {
-            font-size: 6rem;
+            font-size: 6.5rem;
         }
 
         @media(max-width: ${sizes.breakpoints.md}) {
@@ -64,7 +63,15 @@ const StyledBanner = styled.header`
 
     .btn {
         margin-top: 2.5rem;
-        color: ${colors.white};
+        color: var(--white);
+        border: 1px solid var(--white);
+
+        &:hover,
+        &:focus {
+            background: var(--white);
+            color: var(--text);
+            box-shadow: ${shadows.btn1};
+        }
     }
 `
 
