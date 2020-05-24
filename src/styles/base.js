@@ -39,6 +39,7 @@ const GlobalStyles = () => <Global
             --gutter-medium-1: 6rem;
             --gutter-medium: 4.5rem;
             --gutter-normal: 3rem;
+            --gutter-small-1: 2.5rem;
             --gutter-small: 2rem;
         }
 
@@ -189,6 +190,12 @@ const GlobalStyles = () => <Global
                 }
             }
         }
+
+        p + p {
+            margin-top: var(--gutter-small-1);
+        }
+
+
 
         /* --------------------------------------------- */
         /* ----- Buttons & Links ----- */

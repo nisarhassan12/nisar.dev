@@ -28,10 +28,6 @@ const StyledBlogLayout = styled.div`
         margin-bottom: 3rem;
     }
 
-    p + p {
-        margin-top: 2.5rem;
-    }
-
     blockquote {
         margin: 3rem 0;
         padding: .5rem 1.5rem; 
