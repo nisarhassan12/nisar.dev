@@ -16,6 +16,10 @@ const StyledProject = styled.div`
 
     &:not(:last-of-type) {
         margin-bottom: var(--gutter-huge);
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            margin-bottom: 15rem;
+        }
     }
 
     .preview {
@@ -85,6 +89,7 @@ const StyledProject = styled.div`
 
         @media(min-width: ${sizes.breakpoints.lgx}) {
             font-size: var(--font-size-x-small);
+            line-height: 1.5;
         }
     }
 

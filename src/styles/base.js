@@ -91,6 +91,10 @@ const GlobalStyles = () => <Global
 
         section {
             padding: var(--gutter-x-large) 0;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 9rem 0;
+            }
         }
 
         /* --------------------------------------------- */

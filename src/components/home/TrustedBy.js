@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import GitpodLogo from '../../resources/gitpod.svg'
 import TypeFoxLogo from '../../resources/typefox.svg'
 import TheiaLogo from '../../resources/theia.svg'
+import OpenVSX from '../../resources/open-vsx.svg'
 import { sizes } from '../../styles/variables'
 
 const StyledTrustedBy = styled.section`
@@ -26,6 +27,7 @@ const StyledTrustedBy = styled.section`
         }
     }
 
+
     img {
         height: 4.5rem;
         max-width: 18rem;
@@ -38,6 +40,10 @@ const StyledTrustedBy = styled.section`
         }
     }
 
+    .open-vsx {
+        max-width: 24rem;
+    }
+
 `
 
 const companies = [
@@ -47,14 +53,20 @@ const companies = [
         alt: "Theia IDE Logo"
     },
     {
+        url: 'https://gitpod.io',
+        img: GitpodLogo,
+        alt: "Theia IDE Logo"
+    },
+    {
         url: 'https://typefox.io',
         img: TypeFoxLogo,
         alt: "TypeFox Logo"
     },
     {
-        url: 'https://gitpod.io',
-        img: GitpodLogo,
-        alt: "Theia IDE Logo"
+        url: 'https://open-vsx.org',
+        img: OpenVSX,
+        alt: "OpenVSX",
+        className: "open-vsx"
     }
 ]
 
@@ -69,6 +81,7 @@ const TrustedBy = () => (
                                 <img
                                     src={c.img}
                                     alt={c.alt}
+                                    className={c.className}
                                 />
                             )
                         }

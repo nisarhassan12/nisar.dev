@@ -40,5 +40,5 @@ export const shadows = {
     light2: '0 1rem 5rem rgba(0,0,0, 0.25)',
     light3: '0 1rem 6rem rgba(0,0,0, .6)',
     btn: '0 .8rem 1.5rem rgba(0,0,0, .15)',
-    btn1: '0 1rem 2rem rgba(0,0,0, .2)'
+    btn1: '0 1.5rem 2rem rgba(0,0,0, .25)',
 }
