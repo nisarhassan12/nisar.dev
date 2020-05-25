@@ -1,12 +1,12 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from './variables'
+import { sizes } from '../styles/variables'
 
 const StyledFooter = styled.footer`
     padding: 5rem 0 3rem;
-    color: ${colors.textWhite};
-    background: ${colors.darkGrey};
+    color: var(--textWhite);
+    background: var(--darkGrey);
     text-align: center;
 
     .social-links {
@@ -33,7 +33,7 @@ const StyledFooter = styled.footer`
         display: flex;
         justify-content: space-between;
         padding-top: 3rem;
-        border-top: 1px solid ${colors.lightGrey};
+        border-top: 1px solid var(--lightGrey);
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column-reverse;

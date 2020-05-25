@@ -1,6 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
-import { colors, sizes, shadows } from './variables'
+import { sizes, shadows } from './variables'
 
 const GlobalStyles = () => <Global 
     styles={css`
@@ -14,6 +14,33 @@ const GlobalStyles = () => <Global
             margin: 0;
             padding: 0;
             box-sizing: inherit;
+        }
+
+        :root {
+            --font-size-huge: 9rem;
+            --font-size-large: 6.5rem;
+            --font-size-large-0: 6rem;
+            --font-size-medium: 5.5rem;
+            --font-size-medium-1: 4.5rem;
+            --font-size-medium-2: 3.5rem;
+            --font-size-normal: 3rem;
+            --font-size-default: 2.4rem;
+            --font-size-small: 2.2rem;
+            --font-size-x-small: 2.1rem;
+
+            --wrapperMaxWidth: 1160px;
+            --wrapperWidth: 806px;
+            --smallWrapperWidth: 740px;
+            --xSmallWrapperWidth: 540px;
+
+            --gutter-huge: 20rem;
+            --gutter-x-large: 12rem;
+            --gutter-large: 8rem;
+            --gutter-medium-1: 6rem;
+            --gutter-medium: 4.5rem;
+            --gutter-normal: 3rem;
+            --gutter-small-1: 2.5rem;
+            --gutter-small: 2rem;
         }
 
         html {
@@ -37,22 +64,37 @@ const GlobalStyles = () => <Global
         }
 
         body {
-            font: 300 ${sizes.font.default}/1.6 'Josefin sans', sans-serif;
-            color: ${colors.text};
+            --white: #fff;
+            --offWhite: #f4f4f4;
+            --offWhite1: #e9e8e8;
+            --textWhite: #c6d8d7;
+            --black: #222;
+            --text: #333;
+            --darkGrey: #293335;
+            --lightGrey: #394344;
+        }
+
+        body {
+            font: 300 var(--font-size-default)/1.6 'Josefin sans', sans-serif;
+            color: var(--text);
             box-sizing: border-box;
             overflow-x: hidden;
     
             @media(max-width: ${sizes.breakpoints.md}) {
-                font-size: ${sizes.font.md};
+                font-size: var(--font-size-small);
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: ${sizes.font.sm};
+                font-size: var(--font-size-x-small);
             }
         }
 
         section {
-            padding: 10rem 0;
+            padding: var(--gutter-x-large) 0;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 9rem 0;
+            }
         }
 
         /* --------------------------------------------- */
@@ -61,18 +103,18 @@ const GlobalStyles = () => <Global
 
         .row {
             margin: 0 auto;
-            max-width: ${sizes.grid.maxWidth};
+            max-width: var(--wrapperMaxWidth);
 
             @media(max-width: ${sizes.breakpoints.lgx}) {
-                padding: 0 7rem;
+                padding: 0 var(--gutter-large);
             }
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                padding: 0 4rem;
+                padding: 0 var(--gutter-medium);
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 0 2rem;
+                padding: 0 var(--gutter-normal);
             }
         }
 
@@ -81,7 +123,7 @@ const GlobalStyles = () => <Global
         }
 
         .grey-container {
-            background: ${colors.offWhite};
+            background: var(--offWhite);
         }
 
         /* --------------------------------------------- */
@@ -93,48 +135,40 @@ const GlobalStyles = () => <Global
         h3,
         h4 {
             line-height: 1.1;
+            font-family: 'Jost', sans-serif;
             font-weight: 300;
         }
 
         h1 {
-            font-size: 5rem;
+            font-size: var(--font-size-large);
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                font-size: 4.6rem;
+                font-size: var(--font-size-medium);
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                font-size: 4rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 3.8rem;
+                font-size: var(--font-size-medium-1);
             }
         }
 
         h2 {
-            font-size: 4.5rem;
+            font-size: var(--font-size-large-0);
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                font-size: 3.8rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                font-size: 3.5rem;
+                font-size: var(--font-size-medium-2);
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 3rem;
+                font-size: var(--font-size-normal);
             }
         }
 
         h3 {
-            font-size: 2.8rem;
+            font-size: var(--font-size-medium-2);
 
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                font-size: 2.6rem;
+            @media(max-width: ${sizes.breakpoints.md}) {
+                font-size: var(--font-size-normal);
             }
-
         }
 
         .heading {
@@ -145,7 +179,7 @@ const GlobalStyles = () => <Global
                     margin: 2rem 0 2.5rem;
                     height: 2px;
                     width: 12rem;
-                    background: ${colors.darkGrey};
+                    background: var(--darkGrey);
 
                     @media(max-width: ${sizes.breakpoints.md}) {
                         width: 8rem;
@@ -155,6 +189,12 @@ const GlobalStyles = () => <Global
                 }
             }
         }
+
+        p + p {
+            margin-top: var(--gutter-small-1);
+        }
+
+
 
         /* --------------------------------------------- */
         /* ----- Buttons & Links ----- */
@@ -191,9 +231,10 @@ const GlobalStyles = () => <Global
             font-size: 2.2rem;
             padding: .8rem 3rem;
             border-radius: 10rem;
-            color: ${colors.darkGrey};
+            color: var(--darkGrey);
             box-shadow: ${shadows.btn};
-            transition: all .3s;
+            transition: all .2s;
+            font-family: 'Jost', sans-serif;
 
             @media(max-width: ${sizes.breakpoints.xsm}) {
                 font-size: 2rem;
@@ -202,16 +243,20 @@ const GlobalStyles = () => <Global
 
             &:hover,
             &:focus {
+                background: var(--black);
                 box-shadow: ${shadows.btn1};
+                outline: none;
+            }
+
+            &:focus {
+                transform: translateY(-.1rem);
             }
 
             &--dark {
-                &,
-                &:active,
-                &:visited {
-                    color: ${colors.white};
-                    background: ${colors.darkGrey};
-                    border: 1px solid ${colors.darkGrey};
+                & {
+                    color: var(--white);
+                    background: var(--darkGrey);
+                    border: 1px solid var(--darkGrey);
                 }
             }
 
@@ -241,14 +286,6 @@ const GlobalStyles = () => <Global
         /* --------------------------------------------- */
         /* ----- Others ----- */
         /* --------------------------------------------- */
-
-        input, 
-        textarea,
-        button {
-            font-family: inherit;
-            font-weight: 300;
-            font-size: inherit;
-        }
 
         br {
             @media(max-width: ${sizes.breakpoints.sm}) {

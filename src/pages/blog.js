@@ -6,7 +6,6 @@ import Posts from '../components/Posts'
 import { Link } from 'gatsby'
 import usePosts from '../hooks/usePosts'
 import styled from '@emotion/styled'
-import { colors } from '../styles/variables'
 
 const StyledBlogPage = styled.div`
     section {
@@ -17,7 +16,7 @@ const StyledBlogPage = styled.div`
 const BlogPage = () => {
     const posts = usePosts()
     return (
-        <IndexLayout canonical="/blog/" pageTitle="Blog" pageColor={colors.offWhite}>
+        <IndexLayout canonical="/blog/" pageTitle="Blog" pageColor={'var(--offWhite)'}>
             <StyledBlogPage>
                 <Posts posts={posts}/>
             </StyledBlogPage>

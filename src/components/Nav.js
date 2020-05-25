@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { sizes, colors } from '../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -30,10 +30,10 @@ const StyledNav = styled.nav`
 
     li {
         &:not(:last-child) {
-            margin-right: 5rem;
+            margin-right: 6rem;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-               margin-right: 3rem;
+               margin-right: 4rem;
             }
 
             @media(max-width: 450px) {
@@ -72,10 +72,10 @@ const StyledNav = styled.nav`
 const Nav = () => (
     <StyledNav role="navigation">
         <ul>
-            <li><Link activeClassName="active" to="/">Home.</Link></li>
-            <li><Link activeClassName="active" to="/blog/">Blog.</Link></li>
-            <li><Link activeClassName="active" to="/work/">Work.</Link></li>
-            <li><Link activeClassName="active" to="/contact/">Contact.</Link></li>
+            <li><Link activeClassName="active" to="/">Home</Link></li>
+            <li><Link activeClassName="active" to="#work">Work</Link></li>
+            <li><Link activeClassName="active" to="/blog/">Blog</Link></li>
+            <li><Link activeClassName="active" to="/contact/">Contact</Link></li>
         </ul>
     </StyledNav>
 )

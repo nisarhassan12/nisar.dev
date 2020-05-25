@@ -1,11 +1,11 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 import Post from './Post'
 
 const StyledPosts = styled.section`
-    background: ${colors.offWhite};
+    background: var(--offWhite);
 
     .posts {
        max-width: 92rem;
@@ -26,7 +26,7 @@ const StyledPosts = styled.section`
     }
 
     a {
-        color: ${colors.text};
+        color: var(--text);
     }
 `
 
@@ -34,7 +34,7 @@ const Posts = ({posts}) => (
     <StyledPosts id="posts">
         <div className="row">
            <div className="posts">
-                <h1 className="heading--underlined">Articles</h1>
+                <h1 className="heading--underlined">Blog</h1>
                 <div className="post-container">
                     {
                         posts.map((post, i) => <Post key={i} {...post}/>)

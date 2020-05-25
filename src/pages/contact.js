@@ -1,11 +1,9 @@
 import React from 'react'
 
 import IndexLayout from '../layouts'
-import { colors, sizes } from '../styles/variables'
 import styled from '@emotion/styled'
 
 const StyledContactPage = styled.div`
-
     section {
         padding-top: 5rem;
     }
@@ -17,9 +15,8 @@ const StyledContactPage = styled.div`
     }
 
     .btn {
-        margin-top: 2.5rem;
+        margin-top: 4rem;
     }
-
 `
 
 const ContactPage = () => (
