@@ -1,25 +1,67 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Nisar from '../../resources/nisar.jpg'
+
+import styled from '@emotion/styled'
+import { shadows } from '../../styles/variables'
+
+const Styled = styled.section`
+    .contents {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 1040px) {
+            flex-direction: column;
+            max-width: 600px;
+        }
+    }
+
+    img {
+        display: block;
+        flex: 0 0 50%;
+        width: 100%;
+        box-shadow: ${shadows.light2};
+
+        @media(max-width: 1250px) {
+            flex: 0 0 45%;
+        }
+
+        @media(max-width: 1040px) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    .text {
+        flex: 0 0 40%;
+
+        @media(max-width: 1250px) {
+            flex: 0 0 45%;
+        }
+    }
+`
 
 const About = () => (
-    <section>
+    <Styled>
         <div className="row">
-            <div className="wrapper">
-                <h2 className="heading--underlined">About Me</h2>
-                <p>
-                    My name is Syed Nisar Hassan Naqvi I am a self-taught front end developer and interface designer based in Lahore, Pakistan. I'm passionate about accessibility, performace and elegant design and things that usually make life easier for the users.
+            <h2 className="heading--underlined">About Me</h2>
+            <div className="contents">
+                <img src={Nisar} alt="Nisar Hassan Naqvi" />
+                <div className="text">
+                    <p>
+                        My name is Syed Nisar Hassan Naqvi I am a self-taught front end developer and interface designer based in Lahore, Pakistan. I'm passionate about accessibility, performace and elegant design and things that usually make life easier for the users.
                 </p>
-                <p>
-                    I currently work for <a href="https://typefox.io" target="_blank">TypeFox</a> as a freelance front-end developer where almost the entirety of the work I do is open source.
+                    <p>
+                        I currently work for <a href="https://typefox.io" target="_blank">TypeFox</a> as a freelance front-end developer where almost the entirety of the work I do is open source.
                 </p>
-                <p>
-                    I was always curious about computers. When I was a child I was introduced to programming in school, I started learning about Linux and Web Development when I was in High School. In the year 2018, I dropped out of university at the age of 18 with the grand plans of becoming a great Web Developer and Computer Scientist. I started my career as a front end web developer in 2019.
-                </p>
-                <p>These days I'm willing to create some helpful and valuable Open Source projects that can help the web community.</p>
-                <p>Got something to say or need any kind of help please feel free to <Link to="/contact/">reach out</Link> I'll try my best to respond back.</p>
+                    <p>These days I'm willing to create some helpful and valuable Open Source projects that can help the web community.</p>
+                    <p>Got something to say or need any kind of help please feel free to <Link to="/contact/">reach out</Link> I'll try my best to respond back.</p>
+                </div>
             </div>
+
         </div>
-    </section>
+
+    </Styled>
 )
 
 export default About
