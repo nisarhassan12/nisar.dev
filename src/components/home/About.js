@@ -17,11 +17,8 @@ const Styled = styled.section`
         }
     }
 
-    img {
-        display: block;
+    .img-container {
         flex: 0 0 50%;
-        width: 100%;
-        box-shadow: ${shadows.light2};
 
         @media(max-width: 1250px) {
             flex: 0 0 45%;
@@ -30,6 +27,12 @@ const Styled = styled.section`
         @media(max-width: 1040px) {
             margin-bottom: 6rem;
         }
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        box-shadow: ${shadows.light2};    
     }
 
     .text {
@@ -46,7 +49,9 @@ const About = () => (
         <div className="row">
             <h2 className="heading--underlined">About Me</h2>
             <div className="contents">
-                <img src={Nisar} alt="Nisar Hassan Naqvi" />
+                <div className="img-container">
+                    <img src={Nisar} alt="Nisar Hassan Naqvi" />
+                </div>
                 <div className="text">
                     <p>
                         My name is Syed Nisar Hassan Naqvi I am a self-taught front end developer and interface designer based in Lahore, Pakistan. I'm passionate about accessibility, performace and elegant design and things that usually make life easier for the users.
