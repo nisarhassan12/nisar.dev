@@ -19,7 +19,7 @@ const projects = [
         path: GitpodPreview,
         description: 'Website for Gitpod a online cloud IDE based on Eclipse Theia.',
         title: 'gitpod.io',
-        url: 'https://gitpod.io',
+        url: 'https://www.gitpod.io',
         repo: 'gitpod-io/website',
         tools: ['React', 'TypeScript', 'Gatsby', 'Emotion']
     },
