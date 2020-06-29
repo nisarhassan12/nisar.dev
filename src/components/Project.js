@@ -1,129 +1,174 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import { shadows, sizes } from '../styles/variables';
 
-import styled from '@emotion/styled'
-import { shadows, sizes } from '../styles/variables'
-import GithubMark from '../resources/githubmark.svg'
+import GithubMark from '../resources/githubmark.svg';
+import styled from '@emotion/styled';
 
 const StyledProject = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1280px) {
+    flex-direction: column-reverse;
+    max-width: var(--smallWrapperWidth);
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: var(--gutter-huge);
+
+    @media (max-width: ${sizes.breakpoints.md}) {
+      margin-bottom: 15rem;
+    }
+  }
+
+  .preview {
     display: flex;
-    justify-content: space-between;
+    box-shadow: ${shadows.light2};
+    transition: all 0.5s;
+    transform: translateY(5rem);
+    opacity: 0;
 
-
-    @media(max-width: 1280px) {
-        flex-direction: column-reverse;
-        max-width: var(--smallWrapperWidth);
+    @media (max-width: 1280px) {
+      margin-bottom: var(--gutter-medium);
     }
 
-    &:not(:last-of-type) {
-        margin-bottom: var(--gutter-huge);
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            margin-bottom: 15rem;
-        }
+    @media (min-width: 1280px) {
+      flex: 0 0 65%;
     }
 
-    .preview {
-        display: flex;
-
-        box-shadow: ${shadows.light2};
-        transition: all .25s;
-
-        @media(max-width: 1280px) {
-            margin-bottom: var(--gutter-medium);
-        }
-
-        @media(min-width: 1280px) {
-            flex: 0 0 65%;
-        }
-
-        img, video {
-            width: 100%;
-            height: 100%;
-        }
-
-        &:hover {
-            transform: scale3d(1.025, 1.025, 1.025);
-        }
+    img,
+    video {
+      width: 100%;
+      height: 100%;
     }
 
-    .content {
-        @media(min-width: 1280px) {
-            display: flex;
-            align-items: center;
-            flex: 1;
-            padding-right: 5rem;
-        }
+    &:hover {
+      transform: scale3d(1.025, 1.025, 1.025);
     }
+  }
 
-    ul {
-        font-size: 80%;
-        list-style: initial;
-        list-style-position: inside;
-        font-family: 'Jost';
-        margin-bottom: var(--gutter-small)
+  .in-view {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .content {
+    @media (min-width: 1280px) {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      padding-right: 5rem;
     }
+  }
 
-    .links {
-        display: flex;
-        align-items: center;
+  ul {
+    font-size: 80%;
+    list-style: initial;
+    list-style-position: inside;
+    font-family: 'Jost';
+    margin-bottom: var(--gutter-small);
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+
+  .repo {
+    transition: 0.2s;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
     }
+  }
 
-    .repo {
-        transition: .2s;
-        &:hover,
-        &:focus {
-            transform: scale(1.1);
-        }
+  .githubmark {
+    display: block;
+    height: 2.6rem;
+    margin: 0 2rem;
+  }
+
+  p {
+    margin: var(--gutter-small) 0;
+    font-size: var(--font-size-small);
+    max-width: var(--xSmallWrapperWidth);
+
+    @media (min-width: ${sizes.breakpoints.lgx}) {
+      font-size: var(--font-size-x-small);
+      line-height: 1.5;
     }
+  }
+`;
 
-    .githubmark {
-        display: block;
-        height: 2.6rem;
-        margin: 0 2rem;
+const Project = ({ title, description, tools, path, video, url, repo }) => {
+  const mediaContainerRef = useRef(null);
+
+  const isInView = () => {
+    if (mediaContainerRef.current) {
+      const rect = mediaContainerRef.current.getBoundingClientRect();
+      return rect.top >= -100 && rect.bottom <= window.innerHeight + 100;
     }
+    return false;
+  };
 
-    p {
-        margin: var(--gutter-small) 0;
-        font-size: var(--font-size-small);
-        max-width: var(--xSmallWrapperWidth);
-
-        @media(min-width: ${sizes.breakpoints.lgx}) {
-            font-size: var(--font-size-x-small);
-            line-height: 1.5;
-        }
+  const toggleInViewClass = () => {
+    if (isInView()) {
+      mediaContainerRef.current.classList.add('in-view');
     }
+  };
 
-`
+  const scrollHandler = () => {
+    toggleInViewClass();
+  };
 
-const Project = ({ title, description, tools, path, video, url, repo }) => (
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandler);
+    toggleInViewClass();
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
+  });
+
+  return (
     <StyledProject>
-        <div className="content">
-            <div className="text">
-                <h3>{title}</h3>
-                <p>{description}</p>
-                { tools && tools.length ? 
-                    <ul>
-                        {tools.map(t => <li>{t}</li>)}
-                    </ul> : null
-                }
-                <div className="links">
-                    <a className="btn btn--small btn--dark" target="_blank" href={url}>Visit site &nbsp;&rarr;</a>
-                    {repo ?
-                        <a href={`https://github.com/${repo}/`} className="repo" target="_blank">
-                            <img className="githubmark" src={GithubMark} />
-                        </a>
-                        : null}
-                </div>
-            </div>
+      <div className="content">
+        <div className="text">
+          <h3>{title}</h3>
+          <p>{description}</p>
+          {tools && tools.length ? (
+            <ul>
+              {tools.map((t) => (
+                <li>{t}</li>
+              ))}
+            </ul>
+          ) : null}
+          <div className="links">
+            <a className="btn btn--small btn--dark" target="_blank" href={url}>
+              Visit site &nbsp;&rarr;
+            </a>
+            {repo ? (
+              <a
+                href={`https://github.com/${repo}/`}
+                className="repo"
+                target="_blank"
+              >
+                <img className="githubmark" src={GithubMark} />
+              </a>
+            ) : null}
+          </div>
         </div>
-        <a className="preview" href={url} target="_blank">
-            {!video ?
-                <img alt={title} src={path} /> :
-                <video autoPlay loop muted playsInline>
-                    <source src={video} type="video/mp4" />
-                </video>}
-        </a>
+      </div>
+      <a className="preview" ref={mediaContainerRef} href={url} target="_blank">
+        {!video ? (
+          <img alt={title} src={path} />
+        ) : (
+          <video autoPlay loop muted playsInline>
+            <source src={video} type="video/mp4" />
+          </video>
+        )}
+      </a>
     </StyledProject>
-)
+  );
+};
 
-export default Project
+export default Project;
