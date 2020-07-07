@@ -54,13 +54,13 @@ const About = () => (
                 </div>
                 <div className="text">
                     <p>
-                        My name is Syed Nisar Hassan Naqvi I am a self-taught front end developer and interface designer based in Lahore, Pakistan. I'm passionate about accessibility, performace and elegant design and things that usually make life easier for the users.
+                        My name is Syed Nisar Hassan Naqvi I am a self-taught front end developer and interface designer based in Lahore, Pakistan. I'm passionate about accessibility, performance and elegant design and things that usually make life easier for the users.
                 </p>
                     <p>
                         I currently work for <a href="https://typefox.io" target="_blank">TypeFox</a> as a freelance front-end developer where almost the entirety of the work I do is open source.
                 </p>
                     <p>These days I'm willing to create some helpful and valuable Open Source projects that can help the web community.</p>
-                    <p>Got something to say or need any kind of help please feel free to <Link to="/contact/">reach out</Link> I'll try my best to respond back.</p>
+                    <p>Got something to say or need any kind of help please feel free to <Link to="/contact/">reach out</Link> I'll try my best to respond.</p>
                 </div>
             </div>
 
