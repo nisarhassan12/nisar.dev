@@ -73,7 +73,7 @@ const Nav = () => (
     <StyledNav role="navigation">
         <ul>
             <li><Link activeClassName="active" to="/">Home</Link></li>
-            <li><Link activeClassName="active" to="#work">Work</Link></li>
+            <li><Link activeClassName="active" to="/#work">Work</Link></li>
             <li><Link activeClassName="active" to="/blog/">Blog</Link></li>
             <li><Link activeClassName="active" to="/contact/">Contact</Link></li>
         </ul>
