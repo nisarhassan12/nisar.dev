@@ -70,9 +70,10 @@ const GlobalStyles = () => (
         --offWhite: #f4f4f4;
         --offWhite1: #e9e8e8;
         --textWhite: #c6d8d7;
-        --black: #222;
+        --black0: #000;
+        --black: #111;
         --text: #333;
-        --darkGrey: #293335;
+        --darkGrey: #193335;
         --lightGrey: #394344;
       }
 
@@ -243,7 +244,7 @@ const GlobalStyles = () => (
 
         &:hover,
         &:focus {
-          background: var(--black);
+          background: var(--black0);
           box-shadow: ${shadows.btn1};
           outline: none;
         }
@@ -255,8 +256,8 @@ const GlobalStyles = () => (
         &--dark {
           & {
             color: var(--white);
-            background: var(--darkGrey);
-            border: 1px solid var(--darkGrey);
+            background: var(--black);
+            border: 1px solid var(--black);
           }
         }
 
