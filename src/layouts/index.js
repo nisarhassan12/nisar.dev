@@ -17,7 +17,6 @@ class IndexLayout extends React.Component {
     if (e.keyCode === 9) {
       // the "I am a keyboard user" key
       document.body.classList.add('user-is-tabbing');
-      console.log(document.body.classList);
       window.removeEventListener('keydown', this.handleFirstTab);
       window.addEventListener('mousedown', this.handleMouseDownOnce);
     }

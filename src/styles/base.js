@@ -33,6 +33,7 @@ const GlobalStyles = () => (
         --wrapperMaxWidth: 1160px;
         --wrapperWidth: 806px;
         --smallWrapperWidth: 740px;
+        --smallWrapperWidth-1: 660px;
         --xSmallWrapperWidth: 540px;
 
         --gutter-huge: 20rem;

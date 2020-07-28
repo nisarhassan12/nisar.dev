@@ -14,27 +14,29 @@ const StyledTestimonials = styled.section`
   }
 `;
 
-const testimonials = [
-  {
-    image: NicholasShook,
-    name: 'Nicholas Shook',
-    role: 'Attorney, Software Developer',
-    quote:
-      'Nisar is a fantastic UI developer and engineer. He helped our website become ARIA-compliant by enforcing accessibility standards in a thorough, test-driven way. We appreciated his clear communication and his awesome work product in our time spent together. I highly recommend booking Nisar for UI needs.',
-  },
-];
+const Testimonials = ({ image }) => {
+  const testimonials = [
+    {
+      image: image,
+      name: 'Nicholas Shook',
+      role: 'Attorney, Software Developer',
+      quote:
+        'Nisar is a fantastic UI developer and engineer. He helped our website become ARIA-compliant by enforcing accessibility standards in a thorough, test-driven way. We appreciated his clear communication and his awesome work product in our time spent together. I highly recommend booking Nisar for UI needs.',
+    },
+  ];
 
-const Testimonials = () => (
-  <StyledTestimonials>
-    <div className="row">
-      <h2 className="heading--underlined">Testimonials</h2>
-      <div className="testimonials">
-        {testimonials.map((t, i) => (
-          <Testimonial key={i + t.name} {...t} />
-        ))}
+  return (
+    <StyledTestimonials>
+      <div className="row">
+        <h2 className="heading--underlined">Testimonials</h2>
+        <div className="testimonials">
+          {testimonials.map((t, i) => (
+            <Testimonial key={i + t.name} {...t} />
+          ))}
+        </div>
       </div>
-    </div>
-  </StyledTestimonials>
-);
+    </StyledTestimonials>
+  );
+};
 
 export default Testimonials;
