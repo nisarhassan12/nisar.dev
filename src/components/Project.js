@@ -158,7 +158,7 @@ const Project = ({ title, description, tools, path, video, url, repo }) => {
                 target="_blank"
                 title={`${title} Github Repo.`}
               >
-                <img className="githubmark" src={GithubMark} />
+                <img className="githubmark" alt="GitHub" src={GithubMark} />
               </a>
             ) : null}
           </div>
