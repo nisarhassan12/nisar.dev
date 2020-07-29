@@ -143,7 +143,12 @@ const Project = ({ title, description, tools, path, video, url, repo }) => {
             </ul>
           ) : null}
           <div className="links">
-            <a className="btn btn--small btn--dark" target="_blank" href={url}>
+            <a
+              className="btn btn--small btn--dark"
+              target="_blank"
+              title={`Visit ${title} website`}
+              href={url}
+            >
               Visit site &nbsp;&rarr;
             </a>
             {repo ? (
