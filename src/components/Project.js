@@ -151,6 +151,7 @@ const Project = ({ title, description, tools, path, video, url, repo }) => {
                 href={`https://github.com/${repo}/`}
                 className="repo"
                 target="_blank"
+                title={`${title} Github Repo.`}
               >
                 <img className="githubmark" src={GithubMark} />
               </a>
