@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { shadows, sizes } from '../styles/variables';
 
 import GithubMark from '../resources/githubmark.svg';
@@ -111,8 +111,21 @@ const Project = ({ title, description, tools, path, video, url, repo }) => {
     return false;
   };
 
+  const handleTab = (e) => {
+    if (e.key === 'Tab') {
+      mediaContainerRef.current.classList.add('in-view');
+    }
+  };
+
+  const userIsTabbing = () => {
+    if (document && document.body.classList.contains('user-is-tabbing')) {
+      return true;
+    }
+    return false;
+  };
+
   const toggleInViewClass = () => {
-    if (isInView()) {
+    if (isInView() && !userIsTabbing()) {
       mediaContainerRef.current.classList.add('in-view');
     }
   };
@@ -123,6 +136,7 @@ const Project = ({ title, description, tools, path, video, url, repo }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', scrollHandler);
+    window.addEventListener('keydown', handleTab);
     toggleInViewClass();
     return () => {
       window.removeEventListener('scroll', scrollHandler);

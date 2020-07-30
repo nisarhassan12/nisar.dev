@@ -8,29 +8,14 @@ import MainLayout from '../components/MainLayout';
 import Nav from '../components/Nav';
 import React from 'react';
 import RootLayout from '../components/RootLayout';
+import { handleFirstTab } from '../utils/accessibility';
 
 const prevewURL =
   'https://user-images.githubusercontent.com/46004116/74350530-a9c83880-4dd7-11ea-8578-05610cf855aa.png';
 
 class IndexLayout extends React.Component {
-  handleFirstTab = (e) => {
-    if (e.keyCode === 9) {
-      // the "I am a keyboard user" key
-      document.body.classList.add('user-is-tabbing');
-      window.removeEventListener('keydown', this.handleFirstTab);
-      window.addEventListener('mousedown', this.handleMouseDownOnce);
-    }
-  };
-
-  handleMouseDownOnce = () => {
-    document.body.classList.remove('user-is-tabbing');
-
-    window.removeEventListener('mousedown', this.handleMouseDownOnce);
-    window.addEventListener('keydown', this.handleFirstTab);
-  };
-
   componentDidMount() {
-    window.addEventListener('keydown', this.handleFirstTab);
+    window.addEventListener('keydown', handleFirstTab);
   }
 
   render() {
@@ -63,7 +48,6 @@ class IndexLayout extends React.Component {
                 {(pageTitle && `${pageTitle} | Nisar Hassan Naqvi`) ||
                   data.site.siteMetadata.title}
               </title>
-              }
               <meta
                 name="description"
                 content={data.site.siteMetadata.description}
