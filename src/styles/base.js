@@ -33,6 +33,7 @@ const GlobalStyles = () => (
         --wrapperMaxWidth: 1160px;
         --wrapperWidth: 806px;
         --smallWrapperWidth: 740px;
+        --smallWrapperWidth-1: 660px;
         --xSmallWrapperWidth: 540px;
 
         --gutter-huge: 20rem;
@@ -224,6 +225,11 @@ const GlobalStyles = () => (
       a {
         text-decoration: none;
         color: #0269a4;
+
+        &:hover {
+            text-decoration: underline;
+            transition: all .2s;
+        }
       }
 
       .btn {
@@ -247,6 +253,7 @@ const GlobalStyles = () => (
           background: var(--black0);
           box-shadow: ${shadows.btn1};
           outline: none;
+          text-decoration: none;
         }
 
         &:focus {

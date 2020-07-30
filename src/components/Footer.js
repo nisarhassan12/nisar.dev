@@ -3,7 +3,7 @@ import { sizes } from '../styles/variables';
 import styled from '@emotion/styled';
 
 const StyledFooter = styled.footer`
-  padding: 5rem 0 3rem;
+  padding: 7rem 0 5rem;
   color: var(--textWhite);
   background: var(--black0);
   text-align: center;
@@ -11,7 +11,6 @@ const StyledFooter = styled.footer`
   .social-links {
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
   }
 
   li {
@@ -29,14 +28,10 @@ const StyledFooter = styled.footer`
   }
 
   .info {
-    display: flex;
-    justify-content: space-between;
     padding-top: 3rem;
-    border-top: 1px solid var(--lightGrey);
-
-    @media (max-width: ${sizes.breakpoints.lg}) {
-      flex-direction: column-reverse;
-    }
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: var(--font-size-x-small);
   }
 `;
 
@@ -73,10 +68,13 @@ const Footer = () => (
         </li>
       </ul>
       <div className="info">
-        <p>&copy; 2020. All rights reserved.</p>
         <p>
-          Crafted within Lahore by{' '}
-          <a href="https://twitter.com/nisarhassan12" target="_blank">
+          &copy; 2020. Crafted within Lahore by{' '}
+          <a
+            href="https://twitter.com/nisarhassan12"
+            style={{ color: 'var(--white' }}
+            target="_blank"
+          >
             Nisar
           </a>
           .

@@ -1,12 +1,13 @@
 import { borders, shadows } from '../../styles/variables';
 
+import Img from 'gatsby-image';
 import React from 'react';
 import styled from '@emotion/styled';
 
 const StyledTestimonials = styled.blockquote`
-  max-width: 640px;
+  max-width: var(--smallWrapperWidth-1);
   margin: auto;
-  padding: var(--gutter-normal);
+  padding: var(--gutter-medium);
   border: ${borders.light1};
   box-shadow: ${shadows.light};
   font-size: var(--font-size-x-small);
@@ -16,13 +17,16 @@ const StyledTestimonials = styled.blockquote`
     margin: 0.5rem 0 1rem;
   }
 
-  img {
+  .img-container {
     display: block;
     margin: auto;
     height: 15rem;
     width: 15rem;
-    border-radius: 50%;
     margin-bottom: 2rem;
+  }
+
+  img {
+    border-radius: 50%;
   }
 
   p {
@@ -32,7 +36,9 @@ const StyledTestimonials = styled.blockquote`
 
 const Testimonail = ({ image, name, role, quote }) => (
   <StyledTestimonials>
-    <img src={image} alt={name} />
+    <div className="img-container">
+      <Img fluid={image} alt={name} />
+    </div>
     <div>
       <h3>{name}</h3>
       <div className="role">{role}</div>
