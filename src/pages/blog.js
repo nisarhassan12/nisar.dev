@@ -8,6 +8,12 @@ const StyledBlogPage = styled.div`
   section {
     padding-top: 5rem;
   }
+
+  a {
+      &:hover {
+        text-decoration: none;
+      }
+  }
 `;
 
 const BlogPage = () => {

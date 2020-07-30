@@ -62,6 +62,10 @@ const StyledNav = styled.nav`
         &:focus::after {
             right: 0;
         }
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .active {
