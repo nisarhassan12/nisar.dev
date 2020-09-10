@@ -28,7 +28,7 @@ const Styled = styled.section`
   }
 
   .img-container {
-    max-width: 35rem;
+    max-width: 30rem;
     margin: auto;
     margin-bottom: var(--gutter-normal);
   }
