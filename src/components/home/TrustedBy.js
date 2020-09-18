@@ -68,7 +68,7 @@ const companies = [
 ];
 
 const TrustedBy = () => (
-  <StyledTrustedBy>
+  <StyledTrustedBy id="trusted-by">
     <div className="row">
       <h2 className="heading--underlined">Trusted By</h2>
       <div className="logos-container">

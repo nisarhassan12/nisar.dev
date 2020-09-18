@@ -26,7 +26,7 @@ const Testimonials = ({ image }) => {
   ];
 
   return (
-    <StyledTestimonials>
+    <StyledTestimonials id="testimonials">
       <div className="row">
         <h2 className="heading--underlined">Testimonials</h2>
         <div className="testimonials">

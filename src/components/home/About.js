@@ -44,7 +44,7 @@ const Styled = styled.section`
 `;
 
 const About = ({ image }) => (
-  <Styled>
+  <Styled id="about">
     <div className="row">
       <h2 className="heading--underlined">About Me</h2>
       <div className="contents">
