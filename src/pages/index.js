@@ -42,6 +42,14 @@ export const IndexPageQuery = graphql`
         }
       }
     }
+
+    josef: file(relativePath: { eq: "josef.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
@@ -52,7 +60,7 @@ const IndexPage = ({ data }) => {
         <Banner />
         <Work />
         <TrustedBy />
-        <Testimonials image={data.nick.childImageSharp.fluid} />
+        <Testimonials nick={data.nick.childImageSharp.fluid} josef={data.josef.childImageSharp.fluid} />
         <About image={data.nisar.childImageSharp.fluid} />
       </StyledIndexPage>
     </IndexLayout>

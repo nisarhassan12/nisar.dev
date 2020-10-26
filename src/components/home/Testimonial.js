@@ -6,12 +6,15 @@ import styled from '@emotion/styled';
 
 const StyledTestimonials = styled.blockquote`
   max-width: var(--smallWrapperWidth-1);
-  margin: auto;
-  padding: var(--gutter-medium);
+  padding: var(--gutter-normal);
   border: ${borders.light1};
   box-shadow: ${shadows.light};
-  font-size: var(--font-size-x-small);
+  font-size: var(--font-size-x-small-1);
   text-align: center;
+
+  @media (max-width: 1280px) {
+    margin-bottom: var(--gutter-medium-1);
+  }
 
   .role {
     margin: 0.5rem 0 1rem;
@@ -20,8 +23,8 @@ const StyledTestimonials = styled.blockquote`
   .img-container {
     display: block;
     margin: auto;
-    height: 15rem;
-    width: 15rem;
+    height: 13rem;
+    width: 13rem;
     margin-bottom: 2rem;
   }
 

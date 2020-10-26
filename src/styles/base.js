@@ -29,6 +29,7 @@ const GlobalStyles = () => (
         --font-size-default: 2.3rem;
         --font-size-small: 2.2rem;
         --font-size-x-small: 2.1rem;
+        --font-size-x-small-1: 2rem;
 
         --wrapperMaxWidth: 1160px;
         --wrapperWidth: 806px;
