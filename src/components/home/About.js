@@ -60,11 +60,11 @@ const About = ({ image }) => (
           </p>
           <p>
             I currently work for{' '}
-            <a href="https://typefox.io" target="_blank">
-              TypeFox
-            </a>{' '}
-            as a freelance front-end developer where almost the entirety of the
-            work I do is open source.
+            <a href="https://wwww.gitpod.io" target="_blank">
+              Gitpod
+            </a> and <a href="https://neonlaw.com" target="_blank">NeonLaw</a> {' '}
+            as a freelancer and almost the entirety of the
+            work that I do is open source.
           </p>
           <p>
             These days I'm willing to create some helpful and valuable Open

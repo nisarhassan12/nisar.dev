@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { shadows, sizes } from '../styles/variables';
 
 import GithubMark from '../resources/githubmark.svg';
@@ -8,7 +8,7 @@ const StyledProject = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1110px) {
     flex-direction: column-reverse;
     max-width: var(--smallWrapperWidth);
   }
@@ -28,11 +28,11 @@ const StyledProject = styled.div`
     transform: translateY(5rem);
     opacity: 0;
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1110px) {
       margin-bottom: var(--gutter-medium);
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1110px) {
       flex: 0 0 65%;
     }
 
@@ -40,6 +40,11 @@ const StyledProject = styled.div`
     video {
       width: 100%;
       height: 100%;
+  
+      @media(max-width: 1240px) {
+        object-fit: cover;
+      }
+      
     }
 
     &:hover {
@@ -53,7 +58,7 @@ const StyledProject = styled.div`
   }
 
   .content {
-    @media (min-width: 1280px) {
+    @media (min-width: 1110px) {
       display: flex;
       align-items: center;
       flex: 1;
@@ -96,6 +101,10 @@ const StyledProject = styled.div`
     @media (min-width: ${sizes.breakpoints.lgx}) {
       font-size: var(--font-size-x-small);
       line-height: 1.5;
+    }
+
+    @media(max-width: 1240px) {
+      font-size: var(--font-size-x-small-1);
     }
   }
 `;

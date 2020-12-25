@@ -8,12 +8,6 @@ keywords: 'opensource, opensource contributions'
 externalCanonical: https://www.gitpod.io/blog/frictionless-oss-contributions/
 ---
 
-<style>
-    img {
-        border: 1px solid #eee;
-    }
-</style>
-
 
 Contributing to Open Source can be intimidating as you have to spend a lot of time while going through long README files to find out how to do the development setup that is essential for getting started. This is a serious barrier for contributors. It can be a huge pain especially if you're someone who is just starting out.
 

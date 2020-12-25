@@ -1,10 +1,10 @@
-import React from 'react'
+import { borders, shadows, sizes } from '../styles/variables'
 
 import IndexLayout from './index'
-import Nav from '../components/Nav'
-import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { sizes, borders, shadows } from '../styles/variables'
+import Nav from '../components/Nav'
+import React from 'react'
+import styled from '@emotion/styled'
 
 const StyledBlogLayout = styled.div`
     margin: 7rem 0;
@@ -39,6 +39,10 @@ const StyledBlogLayout = styled.div`
 
     img, video {
         max-width: 100%;
+    }
+
+    img {
+        border: 1px solid #eee;
     }
 
     video {
