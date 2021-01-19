@@ -92,7 +92,7 @@ const Footer = () => (
       </ul>
       <div className="info">
         <p>
-          &copy; 2020. Crafted within Lahore by{' '}
+          &copy; {(new Date()).getFullYear()}. Crafted within Lahore by{' '}
           <a
             href="https://twitter.com/nisarhassan12"
             style={{ color: 'var(--white' }}
