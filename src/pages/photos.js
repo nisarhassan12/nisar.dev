@@ -3,7 +3,10 @@ import React from 'react'
 
 const PhotosPage = () => (
     <IndexLayout>
-        Photos will go here.
+           <div className="row">
+           <h1 className="heading--underlined">Photos</h1>
+           
+           </div>
     </IndexLayout>
 )
 
