@@ -63,7 +63,7 @@ const About = ({ image }) => (
             <a href="https://wwww.gitpod.io" target="_blank">
               Gitpod
             </a> and <a href="https://neonlaw.com" target="_blank">NeonLaw</a> {' '}
-            as a freelancer and almost the entirety of the
+            and almost the entirety of the
             work that I do is open source.
           </p>
           <p>
