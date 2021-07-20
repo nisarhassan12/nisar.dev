@@ -2,6 +2,7 @@ import ContributeDev from '../resources/contribute-dev.png';
 import Gitpod from '../resources/gitpod-io.png';
 import NeonLaw from '../resources/neonlaw.png';
 import PortfolioTemplate from '../resources/portfolio-template.png'
+import DasjoAt from '../resources/dasjo-at.png'
 import Project from './Project';
 import React from 'react';
 import TheiaPreview from '../resources/theia-ide.png';
@@ -28,9 +29,17 @@ const projects = [
     tools: ['React', 'Next', 'CSS Modules', 'DatoCMS'],
   },
   {
+    path: DasjoAt,
+    description:
+      'Website for Josef Kruckenberg a Drupal Contributor.',
+    title: 'dasjo.at',
+    url: 'https://dasjo.at',
+    tools: ['React', 'Gatsby', 'Airtable'],
+  },
+  {
     path: PortfolioTemplate,
     description:
-      'A beautiful minimal and accessible portfolio template for developers.',
+      'A free to use, minimal and accessible portfolio template for developers.',
     title: 'portfolio-template',
     url: 'https://portfolio-template.surge.sh',
     repo: 'nisarhassan12/portfolio-template',
