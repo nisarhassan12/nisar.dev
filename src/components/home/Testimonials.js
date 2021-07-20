@@ -1,4 +1,3 @@
-import NicholasShook from '../../resources/nicholas-shook.jpg';
 import React from 'react';
 import Testimonial from './Testimonial';
 import styled from '@emotion/styled';
