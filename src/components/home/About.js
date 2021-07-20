@@ -62,13 +62,12 @@ const About = ({ image }) => (
             I currently work for{' '}
             <a href="https://wwww.gitpod.io" target="_blank">
               Gitpod
-            </a> and <a href="https://neonlaw.com" target="_blank">NeonLaw</a> {' '}
+            </a> {' '}
             and almost the entirety of the
             work that I do is open source.
           </p>
           <p>
-            These days I'm willing to create some helpful and valuable Open
-            Source projects that can help the web community.
+            Apart from sitting in front of Computer 🖥️ I like playing Cricket 🏏 and love spending time outdoors in Nature 🌴 where I take ocassionally take photographs 📷 you can see some of my recent shots on <a href="https://www.instagram.com/nisarhassan12/" target="_blank">instagram</a>.
           </p>
           <p>
             Got something to say or need any kind of help please feel free to{' '}
