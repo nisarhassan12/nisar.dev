@@ -20,6 +20,13 @@ const StyledBackToTop = styled.a`
   opacity: 1;
   transform: scale(1);
 
+  @media(max-width: 767px) {
+    height: 4.8rem;
+    width: 4.8rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
   &:hover,
   &:focus {
     box-shadow: ${shadows.light3};
@@ -34,6 +41,11 @@ const StyledBackToTop = styled.a`
   img {
     height: 4.2rem;
     width: 4.2rem;
+
+    @media(max-width: 767px) {
+      height: 3.6rem;
+      width: 3.6rem;
+    }
   }
 `;
 

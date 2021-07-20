@@ -5,6 +5,7 @@ import PortfolioTemplate from '../resources/portfolio-template.png'
 import Project from './Project';
 import React from 'react';
 import TheiaPreview from '../resources/theia-ide.png';
+import DevX from '../resources/devxconf.png';
 import TypeFoxPreview from '../resources/typefox-io.png';
 
 const projects = [
@@ -15,7 +16,25 @@ const projects = [
     title: 'gitpod.io',
     url: 'https://www.gitpod.io',
     repo: 'gitpod-io/website',
-    tools: ['React', 'TypeScript', 'Gatsby', 'Emotion'],
+    tools: ['Svelte', 'Tailwind', 'SvelteKit', 'Google Sheets'],
+  },
+  {
+    path: DevX,
+    description:
+      'Website for DevX Conf a confrence about developer experience.',
+    title: 'devxconf.org',
+    url: 'https://devxconf.org/',
+    repo: 'gitpod-io/devxconf.org',
+    tools: ['React', 'Next', 'CSS Modules', 'DatoCMS'],
+  },
+  {
+    path: PortfolioTemplate,
+    description:
+      'A beautiful minimal and accessible portfolio template for developers.',
+    title: 'portfolio-template',
+    url: 'https://portfolio-template.surge.sh',
+    repo: 'nisarhassan12/portfolio-template',
+    tools: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     path: TheiaPreview,
@@ -27,14 +46,6 @@ const projects = [
     tools: ['React', 'Gatsby', 'Hooks', 'Emotion'],
   },
   {
-    path: NeonLaw,
-    description: 'Website for Neon Law. The Upward Mobility Law Firm.',
-    title: 'neonlaw.com',
-    url: 'https://neonlaw.com',
-    repo: 'NeonLaw/codebase',
-    tools: ['React', 'Gatsby', 'GraphQL', 'Chakra UI'],
-  },
-  {
     path: ContributeDev,
     description:
       'A website that list beginner friendly open source projects that are ready to code.',
@@ -44,21 +55,20 @@ const projects = [
     tools: ['React', 'Gatsby', 'Emotion', 'Sheilds.io'],
   },
   {
-    path: PortfolioTemplate,
-    description:
-      'A beautiful minimal and accessible portfolio template for developers.',
-    title: 'portfolio-template',
-    url: 'https://portfolio-template.surge.sh',
-    repo: 'nisarhassan12/portfolio-template',
-    tools: ['HTML', 'CSS', 'JavaScript', 'SVG'],
-  },
-  {
     path: TypeFoxPreview,
     description:
       'Website for TypeFox a company that builds dev tools & programming languages for engineers.',
     title: 'typefox.io',
     url: 'https://typefox.io',
     tools: ['React', 'TypeScript', 'Gatsby', 'Emotion'],
+  },
+  {
+    path: NeonLaw,
+    description: 'Website for Neon Law. The Upward Mobility Law Firm.',
+    title: 'neonlaw.com',
+    url: 'https://neonlaw.com',
+    repo: 'NeonLaw/codebase',
+    tools: ['React', 'Gatsby', 'GraphQL', 'Chakra UI'],
   },
 ];
 
