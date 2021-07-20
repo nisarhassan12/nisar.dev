@@ -34,7 +34,7 @@ const projects = [
       'Website for Josef Kruckenberg a Drupal Contributor.',
     title: 'dasjo.at',
     url: 'https://dasjo.at',
-    tools: ['React', 'Gatsby', 'Airtable'],
+    tools: ['TypeScript', 'React', 'Gatsby', 'Airtable'],
   },
   {
     path: PortfolioTemplate,
