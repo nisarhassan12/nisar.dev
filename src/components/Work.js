@@ -51,7 +51,6 @@ const projects = [
       'Website for Theia IDE a open source vendor neutral VS Code alternative.',
     title: 'theia-ide.org',
     url: 'https://theia-ide.org',
-    repo: 'theia-ide/theia-website',
     tools: ['React', 'Gatsby', 'Hooks', 'Emotion'],
   },
   {
