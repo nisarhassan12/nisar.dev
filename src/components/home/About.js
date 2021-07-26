@@ -67,7 +67,7 @@ const About = ({ image }) => (
             work that I do is open source.
           </p>
           <p>
-            Apart from sitting in front of Computer 🖥️ I like playing Cricket 🏏 and love spending time outdoors in Nature 🌴 where I take ocassionally take photographs 📷 you can see some of my recent shots on <a href="https://www.instagram.com/nisarhassan12/" target="_blank">instagram</a>.
+            Apart from sitting in front of Computer 🖥️ I like playing Cricket 🏏 and love spending time outdoors in Nature 🌴 where I take some photographs 📷 you can see some of my recent shots on <a href="https://www.instagram.com/nisarhassan12/" target="_blank">instagram</a>.
           </p>
           <p>
             Got something to say or need any kind of help please feel free to{' '}
