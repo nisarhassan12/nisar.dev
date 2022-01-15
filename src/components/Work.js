@@ -1,7 +1,7 @@
 import ContributeDev from '../resources/contribute-dev.png';
 import Gitpod from '../resources/gitpod-io.png';
-import NeonLaw from '../resources/neonlaw.png';
 import PortfolioTemplate from '../resources/portfolio-template.png'
+import AgencyElevation from '../resources/agency-elevation.jpg';
 import DasjoAt from '../resources/dasjo-at.png'
 import Project from './Project';
 import React from 'react';
@@ -46,6 +46,13 @@ const projects = [
     tools: ['HTML', 'CSS', 'JavaScript'],
   },
   {
+    path: AgencyElevation,
+    description: "Website for Agency Elevation.",
+    title: 'agencyelevation.com',
+    url: 'https://www.agencyelevation.com/',
+    tools: ['React', 'Gatsby', 'Emotion']
+  },
+  {
     path: TheiaPreview,
     description:
       'Website for Theia IDE a open source vendor neutral VS Code alternative.',
@@ -69,14 +76,6 @@ const projects = [
     title: 'typefox.io',
     url: 'https://typefox.io',
     tools: ['React', 'TypeScript', 'Gatsby', 'Emotion'],
-  },
-  {
-    path: NeonLaw,
-    description: 'Website for Neon Law. The Upward Mobility Law Firm.',
-    title: 'neonlaw.com',
-    url: 'https://neonlaw.com',
-    repo: 'NeonLaw/codebase',
-    tools: ['React', 'Gatsby', 'GraphQL', 'Chakra UI'],
   },
 ];
 
