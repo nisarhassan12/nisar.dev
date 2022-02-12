@@ -60,7 +60,7 @@ const About = ({ image }) => (
           </p>
           <p>
             I currently work for{' '}
-            <a href="https://wwww.gitpod.io" target="_blank">
+            <a href="https://www.gitpod.io" target="_blank">
               Gitpod
             </a> {' '}
             and almost the entirety of the
