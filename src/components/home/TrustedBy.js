@@ -1,11 +1,11 @@
-import EclipseFoundation from '../../resources/eclipse-foundation.png';
-import GitpodLogo from '../../resources/gitpod.svg';
-import Ideacraft from '../../resources/idc.svg'
-import NeonLaw from '../../resources/neonlaw.svg'
-import OpenVSX from '../../resources/open-vsx.svg';
+import EclipseFoundation from '../../images/eclipse-foundation.png';
+import GitpodLogo from '../../images/gitpod.svg';
+import Ideacraft from '../../images/idc.svg'
+import NeonLaw from '../../images/neonlaw.svg'
+import OpenVSX from '../../images/open-vsx.svg';
 import React from 'react';
-import TheiaLogo from '../../resources/theia.svg';
-import TypeFoxLogo from '../../resources/typefox.svg';
+import TheiaLogo from '../../images/theia.svg';
+import TypeFoxLogo from '../../images/typefox.svg';
 import { sizes } from '../../styles/variables';
 import styled from '@emotion/styled';
 

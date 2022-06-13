@@ -1,4 +1,4 @@
-import { Global, css } from '@emotion/core';
+import { Global, css } from '@emotion/react';
 import { shadows, sizes } from './variables';
 
 import React from 'react';

@@ -1,11 +1,11 @@
-import ContributeDev from '../resources/contribute-dev.png';
-import Gitpod from '../resources/gitpod-io.png';
-import NeonLaw from '../resources/neonlaw.png';
-import PortfolioTemplate from '../resources/portfolio-template.png'
+import ContributeDev from '../images/contribute-dev.png';
+import Gitpod from '../images/gitpod-io.png';
+import NeonLaw from '../images/neonlaw.png';
+import PortfolioTemplate from '../images/portfolio-template.png'
 import Project from './Project';
 import React from 'react';
-import TheiaPreview from '../resources/theia-ide.png';
-import TypeFoxPreview from '../resources/typefox-io.png';
+import TheiaPreview from '../images/theia-ide.png';
+import TypeFoxPreview from '../images/typefox-io.png';
 
 const projects = [
   {

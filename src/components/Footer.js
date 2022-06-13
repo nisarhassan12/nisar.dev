@@ -1,9 +1,9 @@
-import GitHub from '../resources/github.svg';
-import Instagram from '../resources/instagram.svg';
-import Linkedin from '../resources/linkedin.svg';
+import GitHub from '../images/github.svg';
+import Instagram from '../images/instagram.svg';
+import Linkedin from '../images/linkedin.svg';
 import React from 'react';
-import Twitter from '../resources/twitter.svg';
-import Youtube from '../resources/youtube.svg';
+import Twitter from '../images/twitter.svg';
+import Youtube from '../images/youtube.svg';
 import { sizes } from '../styles/variables';
 import styled from '@emotion/styled';
 

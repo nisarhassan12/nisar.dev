@@ -1,4 +1,4 @@
-import { Global, css } from '@emotion/core';
+import { Global, css } from '@emotion/react';
 import { StaticQuery, graphql } from 'gatsby';
 
 import BackToTop from '../components/BackToTopButton';

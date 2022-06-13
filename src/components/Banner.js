@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { sizes, shadows } from '../styles/variables'
 import Nav from './Nav'
 import { Link } from 'gatsby'
-import Bg from '../resources/bg.jpg'
+import Bg from '../images/bg.jpg'
 
 
 const StyledBanner = styled.header`
