@@ -50,24 +50,38 @@ const StyledTrustedBy = styled.section`
   .ideacraft {
     transform: scale(.95);
   }
+
+  .agency-elevation {
+    transform: scale(.9);
+  }
+
+  .logrocket {
+    transform: scale(.95);
+  }
 `;
 
 const companies = [
   {
     url: 'https://gitpod.io',
     img: GitpodLogo,
-    alt: 'Theia IDE Logo',
+    alt: 'Theia IDE',
+  },
+  {
+    url: 'https://logrocket.com',
+    img: LogRocket,
+    alt: 'LogRocket',
+    className: 'logrocket'
   },
   {
     url: 'https://theia-ide.org',
     img: TheiaLogo,
-    alt: 'Theia IDE Logo',
+    alt: 'Theia IDE',
   },
   {
-    url: 'https://neonlaw.com',
-    img: NeonLaw,
-    alt: 'NeonLaw',
-    className: 'neonlaw',
+    url: 'https://www.agencyelevation.com',
+    img: AgencyElevation,
+    alt: 'Agency Elevation',
+    className: "agency-elevation"
   },
   {
     url: 'https://open-vsx.org',
@@ -76,9 +90,15 @@ const companies = [
     className: 'open-vsx',
   },
   {
+    url: 'https://neonlaw.com',
+    img: NeonLaw,
+    alt: 'NeonLaw',
+    className: 'neonlaw',
+  },
+  {
     url: 'https://typefox.io',
     img: TypeFoxLogo,
-    alt: 'TypeFox Logo',
+    alt: 'TypeFox',
   },
   {
     url: 'https://ideacraft.com.au',
