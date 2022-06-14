@@ -1,13 +1,13 @@
-import ContributeDev from '../resources/contribute-dev.png';
-import Gitpod from '../resources/gitpod-io.png';
-import PortfolioTemplate from '../resources/portfolio-template.png'
-import AgencyElevation from '../resources/agency-elevation.jpg';
-import DasjoAt from '../resources/dasjo-at.png'
+import ContributeDev from '../images/contribute-dev.png';
+import Gitpod from '../images/gitpod-io.png';
+import PortfolioTemplate from '../images/portfolio-template.png'
+import AgencyElevation from '../images/agency-elevation.jpg';
+import DasjoAt from '../images/dasjo-at.png'
 import Project from './Project';
 import React from 'react';
-import TheiaPreview from '../resources/theia-ide.png';
-import DevX from '../resources/devxconf.png';
-import TypeFoxPreview from '../resources/typefox-io.png';
+import TheiaPreview from '../images/theia-ide.png';
+import DevX from '../images/devxconf.png';
+import TypeFoxPreview from '../images/typefox-io.png';
 
 const projects = [
   {

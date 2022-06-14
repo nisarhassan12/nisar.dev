@@ -6,7 +6,6 @@ import Testimonials from '../components/home/Testimonials';
 import TrustedBy from '../components/home/TrustedBy';
 import Work from '../components/Work';
 import { borders } from '../styles/variables';
-import { graphql } from 'gatsby';
 import styled from '@emotion/styled';
 
 const StyledIndexPage = styled.div`
@@ -25,43 +24,15 @@ const StyledIndexPage = styled.div`
   }
 `;
 
-export const IndexPageQuery = graphql`
-  query {
-    nisar: file(relativePath: { eq: "nisar.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    nick: file(relativePath: { eq: "nicholas-shook.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    josef: file(relativePath: { eq: "josef.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
-
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   return (
     <IndexLayout canonical="/">
       <StyledIndexPage>
         <Banner />
         <Work />
         <TrustedBy />
-        <Testimonials nick={data.nick.childImageSharp.fluid} josef={data.josef.childImageSharp.fluid} />
-        <About image={data.nisar.childImageSharp.fluid} />
+        <Testimonials />
+        <About />
       </StyledIndexPage>
     </IndexLayout>
   );

@@ -1,6 +1,7 @@
-import React from 'react';
-import Testimonial from './Testimonial';
-import styled from '@emotion/styled';
+import React from "react";
+import Testimonial from "./Testimonial";
+import styled from "@emotion/styled";
+import { StaticImage } from "gatsby-plugin-image";
 
 const StyledTestimonials = styled.section`
   text-align: center;
@@ -17,8 +18,8 @@ const StyledTestimonials = styled.section`
     justify-content: space-between;
 
     @media (max-width: 1280px) {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     & > * {
@@ -29,36 +30,28 @@ const StyledTestimonials = styled.section`
   }
 `;
 
-const Testimonials = ({ nick, josef }) => {
-  const testimonials = [
-    {
-      image: nick,
-      name: 'Nicholas Shook',
-      role: 'Attorney, Software Developer',
-      quote:
-        'Nisar is a fantastic UI developer and engineer. He helped our website become ARIA-compliant by enforcing accessibility standards in a thorough, test-driven way. We appreciated his clear communication and his awesome work product in our time spent together. I highly recommend booking Nisar for UI needs.',
-    },
-    {
-      image: josef,
-      name: 'Josef Kruckenberg',
-      role: 'Drupal Contributor',
-      quote:
-        'Working with Nisar was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution. I appreciated him challenging my concept and implementing a solution that performs well using Gatsby.js. Nisar also performed API integration, design and frontend development leading the project to success in a very agile and quality appreciating manner. ',
-    },
-  ];
-
-  return (
-    <StyledTestimonials id="testimonials">
-      <div className="row">
-        <h2 className="heading--underlined">Testimonials</h2>
-        <div className="testimonials">
-          {testimonials.map((t, i) => (
-            <Testimonial key={i + t.name} {...t} />
-          ))}
-        </div>
+const Testimonials = () => (
+  <StyledTestimonials id="testimonials">
+    <div className="row">
+      <h2 className="heading--underlined">Testimonials</h2>
+      <div className="testimonials">
+        <Testimonial
+          name="Nicholas Shook"
+          role="Attorney, Software Developer"
+          quote="Nisar is a fantastic UI developer and engineer. He helped our website become ARIA-compliant by enforcing accessibility standards in a thorough, test-driven way. We appreciated his clear communication and his awesome work product in our time spent together. I highly recommend booking Nisar for UI needs."
+        >
+          <StaticImage src="../../images/nicholas-shook.jpg" alt="Nicholas Shook" />
+        </Testimonial>
+        <Testimonial
+          name="Josef Kruckenberg"
+          role="Drupal Contributor"
+          quote="Working with Nisar was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution. I appreciated him challenging my concept and implementing a solution that performs well using Gatsby.js. Nisar also performed API integration, design and frontend development leading the project to success in a very agile and quality appreciating manner."
+        >
+          <StaticImage src="../../images/josef.jpg" alt="Josef Kruckenberg" />
+        </Testimonial>
       </div>
-    </StyledTestimonials>
-  );
-};
+    </div>
+  </StyledTestimonials>
+);
 
 export default Testimonials;

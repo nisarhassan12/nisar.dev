@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { shadows, sizes } from '../styles/variables';
 
-import GithubMark from '../resources/githubmark.svg';
+import GithubMark from '../images/githubmark.svg';
 import styled from '@emotion/styled';
 
 const StyledProject = styled.div`

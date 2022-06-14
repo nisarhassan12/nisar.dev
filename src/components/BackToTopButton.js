@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import ArrowUp from '../resources/arrow-up.svg';
+import ArrowUp from '../images/arrow-up.svg';
 import { shadows } from '../styles/variables';
 import styled from '@emotion/styled';
 

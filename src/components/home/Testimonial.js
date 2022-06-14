@@ -1,6 +1,5 @@
 import { borders, shadows } from '../../styles/variables';
 
-import Img from 'gatsby-image';
 import React from 'react';
 import styled from '@emotion/styled';
 
@@ -37,17 +36,20 @@ const StyledTestimonials = styled.blockquote`
   }
 `;
 
-const Testimonail = ({ image, name, role, quote }) => (
-  <StyledTestimonials>
-    <div className="img-container">
-      <Img fluid={image} alt={name} />
-    </div>
-    <div>
-      <h3>{name}</h3>
-      <div className="role">{role}</div>
-      <p>{quote}</p>
-    </div>
-  </StyledTestimonials>
-);
+const Testimonail = ({ name, role, quote, children, ...props }) =>{
+  console.log(props.children);
+  return  (
+    <StyledTestimonials>
+      <div className="img-container">
+        {children}
+      </div>
+      <div>
+        <h3>{name}</h3>
+        <div className="role">{role}</div>
+        <p>{quote}</p>
+      </div>
+    </StyledTestimonials>
+  )
+};
 
 export default Testimonail;

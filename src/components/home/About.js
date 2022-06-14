@@ -1,6 +1,6 @@
 import { borders, shadows } from '../../styles/variables';
 
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import React from 'react';
 import styled from '@emotion/styled';
@@ -27,19 +27,13 @@ const Styled = styled.section`
     }
   }
 
-  .img-container {
-    max-width: 30rem;
-    margin: auto;
-    margin-bottom: var(--gutter-normal);
-  }
-
-  img {
+  .img {
     display: block;
     max-width: 100%;
     border-radius: 50%;
-  }
-
-  .text {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto var(--gutter-normal);
   }
 `;
 
@@ -49,7 +43,7 @@ const About = ({ image }) => (
       <h2 className="heading--underlined">About Me</h2>
       <div className="contents">
         <div className="img-container">
-          <Img fluid={image} alt="Nisar Hassan Naqvi" />
+          <StaticImage src='../../images/nisar.jpg' alt="Nisar Hassan Naqvi" class='img' />
         </div>
         <div className="text">
           <p>
