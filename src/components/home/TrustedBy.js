@@ -3,6 +3,8 @@ import GitpodLogo from '../../images/gitpod.svg';
 import Ideacraft from '../../images/idc.svg'
 import NeonLaw from '../../images/neonlaw.svg'
 import OpenVSX from '../../images/open-vsx.svg';
+import LogRocket from '../../images/logrocket.svg';
+import AgencyElevation from '../../images/agency-elevation.svg'; 
 import React from 'react';
 import TheiaLogo from '../../images/theia.svg';
 import TypeFoxLogo from '../../images/typefox.svg';
