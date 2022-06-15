@@ -25,9 +25,6 @@ const StyledTestimonials = styled.blockquote`
     height: 13rem;
     width: 13rem;
     margin-bottom: 2rem;
-  }
-
-  img {
     border-radius: 50%;
   }
 
@@ -36,9 +33,7 @@ const StyledTestimonials = styled.blockquote`
   }
 `;
 
-const Testimonail = ({ name, role, quote, children, ...props }) =>{
-  console.log(props.children);
-  return  (
+const Testimonail = ({ name, role, quote, children, ...props }) => (
     <StyledTestimonials>
       <div className="img-container">
         {children}
@@ -50,6 +45,5 @@ const Testimonail = ({ name, role, quote, children, ...props }) =>{
       </div>
     </StyledTestimonials>
   )
-};
 
 export default Testimonail;
