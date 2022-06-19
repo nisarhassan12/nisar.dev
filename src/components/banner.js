@@ -1,11 +1,10 @@
-import React from 'react'
+import { shadows, sizes } from '../styles/variables'
 
-import styled from '@emotion/styled'
-import { sizes, shadows } from '../styles/variables'
-import Nav from './Nav'
-import { Link } from 'gatsby'
 import Bg from '../images/bg.jpg'
-
+import { Link } from 'gatsby'
+import Nav from './nav'
+import React from 'react'
+import styled from '@emotion/styled'
 
 const StyledBanner = styled.header`
     position: relative;

@@ -1,7 +1,7 @@
 import React from "react";
-import Testimonial from "./Testimonial";
-import styled from "@emotion/styled";
 import { StaticImage } from "gatsby-plugin-image";
+import Testimonial from "./testimonial";
+import styled from "@emotion/styled";
 
 const StyledTestimonials = styled.section`
   text-align: center;

@@ -1,10 +1,10 @@
-import About from '../components/home/About';
-import Banner from '../components/Banner';
+import About from '../components/home/about';
+import Banner from '../components/banner';
 import IndexLayout from '../layouts/index';
 import React from 'react';
-import Testimonials from '../components/home/Testimonials';
-import TrustedBy from '../components/home/TrustedBy';
-import Work from '../components/Work';
+import Testimonials from '../components/home/testimonials';
+import TrustedBy from '../components/home/trusted-by';
+import Work from '../components/work';
 import { borders } from '../styles/variables';
 import styled from '@emotion/styled';
 

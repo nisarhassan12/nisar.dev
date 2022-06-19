@@ -1,4 +1,4 @@
-import Post from './Post';
+import Post from './post';
 import React from 'react';
 import styled from '@emotion/styled';
 

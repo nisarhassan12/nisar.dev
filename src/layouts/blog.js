@@ -2,7 +2,7 @@ import { borders, shadows, sizes } from '../styles/variables'
 
 import IndexLayout from './index'
 import { Link } from 'gatsby'
-import Nav from '../components/Nav'
+import Nav from '../components/nav'
 import React from 'react'
 import styled from '@emotion/styled'
 

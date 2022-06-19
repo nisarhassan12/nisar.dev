@@ -1,13 +1,13 @@
 import { Global, css } from '@emotion/react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import BackToTop from '../components/BackToTopButton';
-import Footer from '../components/Footer';
+import BackToTop from '../components/back-to-top-button';
+import Footer from '../components/footer';
 import Helmet from 'react-helmet';
-import MainLayout from '../components/MainLayout';
-import Nav from '../components/Nav';
+import MainLayout from '../components/main-layout';
+import Nav from '../components/nav';
 import React from 'react';
-import RootLayout from '../components/RootLayout';
+import RootLayout from '../components/root-layout';
 import { handleFirstTab } from '../utils/accessibility';
 
 const prevewURL =
