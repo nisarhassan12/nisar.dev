@@ -1,8 +1,8 @@
 import IndexLayout from '../layouts/index';
-import Posts from '../components/Posts';
+import Posts from '../components/posts';
 import React from 'react';
 import styled from '@emotion/styled';
-import usePosts from '../hooks/usePosts';
+import usePosts from '../hooks/use-posts';
 
 const StyledBlogPage = styled.div`
   section {
