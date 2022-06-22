@@ -1,10 +1,10 @@
+import AgencyElevation from '../../images/agency-elevation.svg';
 import EclipseFoundation from '../../images/eclipse-foundation.png';
 import GitpodLogo from '../../images/gitpod.svg';
 import Ideacraft from '../../images/idc.svg'
+import LogRocket from '../../images/logrocket.svg';
 import NeonLaw from '../../images/neonlaw.svg'
 import OpenVSX from '../../images/open-vsx.svg';
-import LogRocket from '../../images/logrocket.svg';
-import AgencyElevation from '../../images/agency-elevation.svg'; 
 import React from 'react';
 import TheiaLogo from '../../images/theia.svg';
 import TypeFoxLogo from '../../images/typefox.svg';
@@ -36,8 +36,8 @@ const StyledTrustedBy = styled.section`
   img {
     height: 4.5rem;
     max-width: 18rem;
-    filter: grayscale(1) opacity(0.6);
     -webkit-filter: grayscale(1) opacity(0.6);
+    filter: grayscale(1) opacity(0.6);
 
     @media (max-width: ${sizes.breakpoints.lg}) {
       height: 4rem;
