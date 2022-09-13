@@ -1,7 +1,8 @@
 import AgencyElevation from '../images/agency-elevation.jpg';
 import ContributeDev from '../images/contribute-dev.png';
 import DasjoAt from '../images/dasjo-at.png'
-import DevX from '../images/devxconf.png';
+import DevXConf from '../images/devxconf.png';
+import DevX from '../images/devx-dark.png';
 import Gitpod from '../images/gitpod-io.png';
 import PortfolioTemplate from '../images/portfolio-template.png'
 import Project from './project';
@@ -20,13 +21,21 @@ const projects = [
     tools: ['Svelte', 'Tailwind', 'SvelteKit', 'Google Sheets'],
   },
   {
-    path: DevX,
+    path: DevXConf,
     description:
       'Website for DevX Conf a confrence about developer experience.',
     title: 'devxconf.org',
     url: 'https://devxconf.org/',
     repo: 'gitpod-io/devxconf.org',
     tools: ['React', 'Next', 'CSS Modules', 'DatoCMS'],
+  },
+  {
+    path: DevX,
+    description: 'Website for DevX A dedicated space for developer experience',
+    title: 'DevX',
+    url: 'https://www.developerexperience.us/',
+    repo: 'https://github.com/gitpod-io/devx-community/',
+    tools: ['Svelte', 'Tailwind', 'SvelteKit', 'Google Sheets']
   },
   {
     path: DasjoAt,
