@@ -54,11 +54,9 @@ const About = ({ image }) => (
           </p>
           <p>
             I currently work for{' '}
-            <a href="https://www.gitpod.io" target="_blank">
-              Gitpod
-            </a> {' '}
-            and almost the entirety of the
-            work that I do is open source.
+            <a href="https://materialize.com/" target="_blank">
+              Materialize
+            </a>.
           </p>
           <p>
             Apart from sitting in front of Computer 🖥️ I like playing Cricket 🏏 and love spending time outdoors in Nature 🌴 where I take some photographs 📷 you can see some of my recent shots on <a href="https://www.instagram.com/nisarhassan12/" target="_blank">instagram</a>.
