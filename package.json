@@ -34,7 +34,7 @@
     "gatsby-plugin-react-helmet": "^5.16.0",
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-source-filesystem": "^4.16.0",
-    "gatsby-transformer-remark": "^5.16.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.16.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
