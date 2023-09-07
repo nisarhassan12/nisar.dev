@@ -9,7 +9,7 @@ import Project from './project';
 import React from 'react';
 import TheiaPreview from '../images/theia-ide.png';
 import TypeFoxPreview from '../images/typefox-io.png';
-import MaterializeImage from '../images/materialize.png';
+import MaterializeImage from '../images/materialize-screenshot.png';
 
 const projects = [
   {
