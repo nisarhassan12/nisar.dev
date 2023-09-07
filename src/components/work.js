@@ -9,6 +9,7 @@ import Project from './project';
 import React from 'react';
 import TheiaPreview from '../images/theia-ide.png';
 import TypeFoxPreview from '../images/typefox-io.png';
+import MaterializeImage from '../images/materialize.png';
 
 const projects = [
   {
@@ -28,6 +29,13 @@ const projects = [
     url: 'https://devxconf.org/',
     repo: 'gitpod-io/devxconf.org',
     tools: ['React', 'Next', 'CSS Modules', 'DatoCMS'],
+  },
+  {
+    path: MaterializeImage,
+    title: 'materialize.com',
+    description: 'Website for Materialize an operational database warehouse.',
+    url: 'https://materialize.com/',
+    tools: ['Svelte', 'SvelteKit', 'Tailwind', 'Stackbit CMS'],
   },
   {
     path: DevX,

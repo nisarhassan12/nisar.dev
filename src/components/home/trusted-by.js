@@ -5,6 +5,7 @@ import Ideacraft from '../../images/idc.svg'
 import LogRocket from '../../images/logrocket.svg';
 import NeonLaw from '../../images/neonlaw.svg'
 import OpenVSX from '../../images/open-vsx.svg';
+import Materialize from '../../images/materialize.svg';
 import React from 'react';
 import TheiaLogo from '../../images/theia.svg';
 import TypeFoxLogo from '../../images/typefox.svg';
@@ -45,6 +46,10 @@ const StyledTrustedBy = styled.section`
     }
   }
 
+  .theia {
+    opacity: .8;
+  }
+
   .open-vsx {
     max-width: 24rem;
   }
@@ -55,10 +60,15 @@ const StyledTrustedBy = styled.section`
 
   .agency-elevation {
     transform: scale(.9);
+    opacity: .8;
   }
 
   .logrocket {
     transform: scale(.95);
+  }
+
+  .materialize {
+    opacity: .85;
   }
 `;
 
@@ -69,27 +79,28 @@ const companies = [
     alt: 'Theia IDE',
   },
   {
+    url: 'https://materialize.com/',
+    img: Materialize,
+    alt: 'Materialize',
+    className: 'materialize'
+  },
+  {
     url: 'https://logrocket.com',
     img: LogRocket,
     alt: 'LogRocket',
     className: 'logrocket'
   },
   {
-    url: 'https://theia-ide.org',
-    img: TheiaLogo,
-    alt: 'Theia IDE',
-  },
-  {
-    url: 'https://www.agencyelevation.com',
-    img: AgencyElevation,
-    alt: 'Agency Elevation',
-    className: "agency-elevation"
-  },
-  {
     url: 'https://open-vsx.org',
     img: OpenVSX,
     alt: 'OpenVSX',
     className: 'open-vsx',
+  },
+  {
+    url: 'https://theia-ide.org',
+    img: TheiaLogo,
+    className: 'theia',
+    alt: 'Theia IDE',
   },
   {
     url: 'https://neonlaw.com',
@@ -113,7 +124,13 @@ const companies = [
     img: EclipseFoundation,
     alt: 'Eclipse Foundation',
     className: 'eclipse-foundation'
-  }
+  },
+  {
+    url: 'https://www.agencyelevation.com',
+    img: AgencyElevation,
+    alt: 'Agency Elevation',
+    className: "agency-elevation"
+  },
 ];
 
 const TrustedBy = () => (
