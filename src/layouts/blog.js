@@ -17,19 +17,23 @@ const StyledBlogLayout = styled.div`
         background: var(--white);
         box-shadow: ${shadows.light};
         border: ${borders.light1};
-        padding: 5rem 3rem;
+        padding: 5rem var(--gutter-normal);
     }
 
     .date {
-        margin-bottom: 3rem;
+        margin-bottom: var(--gutter-normal);
     }
 
     h1 {
-        margin-bottom: 3rem;
+        margin-bottom: var(--gutter-normal);
+    }
+
+    h2 {
+        margin: var(--gutter-medium) 0 var(--gutter-small);
     }
 
     blockquote {
-        margin: 3rem 0;
+        margin: var(--gutter-normal) 0;
         padding: .5rem 1.5rem; 
         background: var(--offWhite);
         font-size: 90%;
@@ -47,7 +51,7 @@ const StyledBlogLayout = styled.div`
 
     video {
         display: block;
-        margin: 3rem 0;
+        margin: var(--gutter-normal) 0;
         box-shadow: ${shadows.light2};
     }
 

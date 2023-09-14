@@ -185,8 +185,9 @@ class IndexLayout extends React.Component {
                 content={pageDescription || data.site.siteMetadata.description}
               />
               <meta name="twitter:image" content={prevewURL} />
+              <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link
-                href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Jost:wght@300&display=swap"
+                href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap"
                 rel="stylesheet"
               />
             </Helmet>
